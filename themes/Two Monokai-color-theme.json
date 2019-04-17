@@ -71,7 +71,7 @@
 		{
 			"name": "Storage",
 			"scope": [
-				"storage.type",
+				"storage",
 			],
 			"settings": {
 				"foreground": "#78dce8"
@@ -82,7 +82,6 @@
 			"scope": [
 				"keyword",
 				"constant.other.color",
-				"storage.modifier",
 			],
 			"settings": {
 				"foreground": "#ff6188"
