@@ -4,7 +4,7 @@ Clean dark color-coded theme without bullshit:
 
 * No italic
 * No bold
-* No underlining
+* No underlining (except links)
 * Good contrast
 * ~~Bugs fixed, PRs merged, etc~~
 

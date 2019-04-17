@@ -9,6 +9,9 @@
 		"editor.lineHighlightBackground": "#4444447f", // note transparency, used to dim line highlight
 		"editorLineNumber.activeForeground": "#78dce8",
 		"editorCursor.foreground": "#61afef",
+		"statusBar.background": "#333333",
+		"statusBar.debuggingBackground": "#333333",
+		"statusBar.noFolderBackground": "#333333",
 		// derived from Monokai
 		// this is actually from Monokai, not from Default Dark or Monokai Dimmed
 		// not sure about "fa" part, looks inconsistent, but this is what was picked from screenshot
@@ -16,9 +19,6 @@
 		// derived from Default Dark
 		"editor.background": "#1e1e1e",
 		// massively derived from Monokai Dimmed
-		"statusBar.background": "#505050",
-		"statusBar.debuggingBackground": "#505050",
-		"statusBar.noFolderBackground": "#505050",
 		"editorGroupHeader.tabsBackground": "#282828",
 		"titleBar.activeBackground": "#505050",
 		"terminal.ansiWhite": "#ffffff",
