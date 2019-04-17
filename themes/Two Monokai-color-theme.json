@@ -12,6 +12,7 @@
 		"statusBar.background": "#333333",
 		"statusBar.debuggingBackground": "#333333",
 		"statusBar.noFolderBackground": "#333333",
+		"statusBar.foreground": "#adadad",
 		// derived from Monokai
 		// this is actually from Monokai, not from Default Dark or Monokai Dimmed
 		// not sure about "fa" part, looks inconsistent, but this is what was picked from screenshot
