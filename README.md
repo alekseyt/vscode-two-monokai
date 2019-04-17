@@ -28,10 +28,16 @@ Editor colors derived from [Monokai Pro][]:
 
 [Monokai Pro]: https://monokai.pro
 
+Derived from [One Dark][]:
+
+* Blue: `#61afef`
+
+[One Dark]: https://binaryify.github.io/OneDark-Pro/
+
 Derived from Monokai Dimmed:
 
 * Comments color: `#9a9b99`
-* Some other UI colors too (lists, menus, etc)
+* Some other UI colors too (status bar, etc)
 
 Tested on C++, also Lua, Markdown will get some love (not too much) later.
 Other languages might work too, i don't know.

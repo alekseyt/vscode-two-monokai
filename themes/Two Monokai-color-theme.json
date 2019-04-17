@@ -46,7 +46,7 @@
 				"meta.block variable.other",
 			],
 			"settings": {
-				"foreground": "#78dce8"
+				"foreground": "#61afef"
 			}
 		},
 		{
@@ -71,7 +71,8 @@
 		{
 			"name": "Storage",
 			"scope": [
-				"storage",
+				"storage.type",
+				"storage.modifier.local",
 			],
 			"settings": {
 				"foreground": "#78dce8"
@@ -82,6 +83,7 @@
 			"scope": [
 				"keyword",
 				"constant.other.color",
+				"storage.modifier",
 			],
 			"settings": {
 				"foreground": "#ff6188"
@@ -190,7 +192,7 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#a9dc76"
+				"foreground": "#61afef"
 			}
 		},
 		{
