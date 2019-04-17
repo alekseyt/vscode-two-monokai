@@ -9,9 +9,9 @@
 		"editor.lineHighlightBackground": "#4444447f", // note transparency
 		"editorLineNumber.activeForeground": "#78dce8",
 		"editorCursor.foreground": "#61afef",
+		"editor.foreground": "#fcfcfa",
 		// derived from Default Dark
 		"editor.background": "#1e1e1e",
-		"editor.foreground": "#fcfcfa",
 		// massively derived from Monokai Dimmed
 		"statusBar.background": "#505050",
 		"statusBar.debuggingBackground": "#505050",
