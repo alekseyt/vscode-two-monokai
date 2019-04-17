@@ -6,9 +6,12 @@
 	"name": "Two Monokai",
 	"type": "dark",
 	"colors": {
-		"editor.lineHighlightBackground": "#4444447f", // note transparency
+		"editor.lineHighlightBackground": "#4444447f", // note transparency, used to dim line highlight
 		"editorLineNumber.activeForeground": "#78dce8",
 		"editorCursor.foreground": "#61afef",
+		// derived from Monokai
+		// this is actually from Monokai, not from Default Dark or Monokai Dimmed
+		// not sure about "fa" part, looks inconsistent, but this is what was picked from screenshot
 		"editor.foreground": "#fcfcfa",
 		// derived from Default Dark
 		"editor.background": "#1e1e1e",
@@ -28,7 +31,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#9a9b99"
+				"foreground": "#9a9b99" // from Monokai Dimmed
 			}
 		},
 		{
@@ -39,6 +42,8 @@
 				"meta.block variable.other",
 			],
 			"settings": {
+				// has to be different from "storage" otherwise "const x = 10;" won't look nice in JS/TS
+				// this color is also used in C's "x->y", for coloring "y"
 				"foreground": "#61afef"
 			}
 		},
@@ -64,8 +69,8 @@
 		{
 			"name": "Storage",
 			"scope": [
-				"storage.type",
-				"storage.modifier.local",
+				"storage.type", // mostly for C++, also used in JS ("const")
+				"storage.modifier.local", // for "local" in Lua
 			],
 			"settings": {
 				"foreground": "#78dce8"
@@ -76,13 +81,13 @@
 			"scope": [
 				"keyword",
 				"constant.other.color",
-				"storage.modifier",
+				"storage.modifier", // this is strange one, "override" in C++ is storage modifier
 			],
 			"settings": {
 				"foreground": "#ff6188"
 			}
 		},
-		// hmmmm, might not be a bad idea
+		// XXX: hmmmm, might not be a bad idea
 		// {
 		// 	"name": "Punctuation",
 		// 	"scope": [
@@ -114,6 +119,8 @@
 			"name": "Function, Special Method",
 			"scope": [
 				"entity.name.function",
+				// somehow this assigns color to constants in arguments list
+				// e.g. "ns::call(smtg::CONSTANT);" <- "smtg::CONSTANT" will be colored
 				// "meta.function-call",
 				"variable.function",
 				"support.function",
@@ -198,20 +205,6 @@
 			}
 		},
 		{
-			"name": "CSS Class and Support",
-			"scope": [
-				"source.css support.type.property-name",
-				"source.sass support.type.property-name",
-				"source.scss support.type.property-name",
-				"source.less support.type.property-name",
-				"source.stylus support.type.property-name",
-				"source.postcss support.type.property-name"
-			],
-			"settings": {
-				"foreground": "#78dce8"
-			}
-		},
-		{
 			"name": "Sub-methods",
 			"scope": [
 				"entity.name.module.js",
@@ -254,61 +247,6 @@
 			"name": "Attributes",
 			"scope": [
 				"entity.other.attribute-name"
-			],
-			"settings": {
-				"foreground": "#ab9df2"
-			}
-		},
-		{
-			"name": "HTML Attributes",
-			"scope": [
-				"text.html.basic entity.other.attribute-name.html",
-				"text.html.basic entity.other.attribute-name"
-			],
-			"settings": {
-				"foreground": "#ffd866"
-			}
-		},
-		{
-			"name": "CSS Classes",
-			"scope": [
-				"entity.other.attribute-name.class"
-			],
-			"settings": {
-				"foreground": "#ffd866"
-			}
-		},
-		{
-			"name": "CSS ID's",
-			"scope": [
-				"source.sass keyword.control"
-			],
-			"settings": {
-				"foreground": "#78dce8"
-			}
-		},
-		{
-			"name": "Inserted",
-			"scope": [
-				"markup.inserted"
-			],
-			"settings": {
-				"foreground": "#a9dc76"
-			}
-		},
-		{
-			"name": "Deleted",
-			"scope": [
-				"markup.deleted"
-			],
-			"settings": {
-				"foreground": "#ff6188"
-			}
-		},
-		{
-			"name": "Changed",
-			"scope": [
-				"markup.changed"
 			],
 			"settings": {
 				"foreground": "#ab9df2"
