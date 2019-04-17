@@ -11,7 +11,7 @@ Clean dark color-coded theme without bullshit:
 Focuses mostly (but not entirely) on editor colors, the rest are defaults
 (default dark or something). Inspired by [One Monokai][] theme, but instead
 of blending One Dark and Monokai, it blends default dark, Monokai Dimmed
-and Monokai.
+and Monokai (and a little bit of One Dark, it's complicated).
 
 [One Monokai]: https://github.com/azemoh/vscode-one-monokai
 
