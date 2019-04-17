@@ -35,11 +35,13 @@
 			}
 		},
 		{
-			"name": "Variables, Block Level Variables",
+			"name": "Variables, Block Level Variables, Other Variable, String Link",
 			"scope": [
 				"variable",
 				"string constant.other.placeholder",
 				"meta.block variable.other",
+				"support.other.variable",
+				"string.other.link", // detected links will be this color too
 			],
 			"settings": {
 				// has to be different from "storage" otherwise "const x = 10;" won't look nice in JS/TS
@@ -128,16 +130,6 @@
 			],
 			"settings": {
 				"foreground": "#a9dc76"
-			}
-		},
-		{
-			"name": "Other Variable, String Link",
-			"scope": [
-				"support.other.variable",
-				"string.other.link"
-			],
-			"settings": {
-				"foreground": "#78dce8"
 			}
 		},
 		{
@@ -282,6 +274,69 @@
 			],
 			"settings": {
 				"foreground": "#ff6188"
+			}
+		},
+		// markdown stuff is coming mostly from Solarized Dark
+		// (except actual colors)
+		{
+			"name": "Markup Quote, Lists",
+			"scope": [
+				"markup.quote",
+				"markup.list",
+				"markup.other",
+			],
+			"settings": {
+				"foreground": "#a9dc76"
+			}
+		},
+		{
+			"name": "Markup Styling",
+			"scope": [
+				"markup.bold",
+				"markup.italic"
+			],
+			"settings": {
+				"foreground": "#ff6188"
+			}
+		},
+		{
+			"name": "Markup Headings", // not actually headings, just ## marks
+			"scope": [
+				"markup.heading",
+				"markup.heading.setext",
+				"constant.other.reference.link.markdown", // link anchor
+			],
+			"settings": {
+				"foreground": "#ff6188"
+			}
+		},
+		{
+			"name": "Markup Heading Text",
+			"scope": [
+				"markup.heading entity.name",
+			],
+			"settings": {
+				"foreground": "#ffd866"
+			}
+		},
+		{
+			"name": "Markup Inline",
+			"scope": [
+				"markup.inline.raw",
+				"markup.raw",
+			],
+			"settings": {
+				"foreground": "#78dce8"
+			}
+		},
+		{
+			"name": "Markdown - Link",
+			"scope": [
+				"markup.underline.link.markdown",
+			],
+			"settings": {
+				// maybe it's a good idea to have this same color as String Link
+				"foreground": "#61afef"
 			}
 		},
 	]
