@@ -7,7 +7,7 @@
 	"type": "dark",
 	"colors": {
 		"editor.lineHighlightBackground": "#4444447f", // note transparency
-		"editorLineNumber.activeForeground": "#fc9867",
+		"editorLineNumber.activeForeground": "#78dce8",
 		"editorCursor.foreground": "#61afef",
 		// derived from Default Dark
 		"editor.background": "#1e1e1e",
