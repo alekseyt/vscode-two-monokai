@@ -6,16 +6,12 @@
 	"name": "Two Monokai",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#2c292d",
-		"editor.foreground": "#fcfcfa",
-		"inputOption.activeBorder": "#a9dc76",
-		"focusBorder": "#fc9867",
-		"activityBarBadge.foreground": "#2c292d",
-		"activityBarBadge.background": "#fc9867",
 		"editor.lineHighlightBackground": "#4444447f", // note transparency
 		"editorLineNumber.activeForeground": "#fc9867",
-		"editorCursor.foreground": "#fc9867",
-		"panelTitle.activeForeground": "#fcfcfa",
+		"editorCursor.foreground": "#61afef",
+		// derived from Default Dark
+		"editor.background": "#1e1e1e",
+		"editor.foreground": "#fcfcfa",
 		// massively derived from Monokai Dimmed
 		"statusBar.background": "#505050",
 		"statusBar.debuggingBackground": "#505050",
