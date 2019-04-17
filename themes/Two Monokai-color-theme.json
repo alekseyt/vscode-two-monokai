@@ -12,6 +12,7 @@
 		"focusBorder": "#fc9867",
 		"activityBarBadge.foreground": "#2c292d",
 		"activityBarBadge.background": "#fc9867",
+		"editor.lineHighlightBackground": "#4444447f", // note transparency
 		"editorLineNumber.activeForeground": "#fc9867",
 		"editorCursor.foreground": "#fc9867",
 		"panelTitle.activeForeground": "#fcfcfa",
