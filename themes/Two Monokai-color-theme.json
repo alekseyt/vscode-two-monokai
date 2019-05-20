@@ -47,11 +47,11 @@
 			}
 		},
 		{
-			"name": "Block Level Variables, Other Variable, String Link",
+			"name": "Member access, Other Variable, String Link",
 			"scope": [
-				"variable.other.property",
-				"string constant.other.placeholder",
+				"variable.other.property", // member access
 				"support.other.variable",
+				"string constant.other.placeholder",
 				"string.other.link", // detected links will be this color too
 			],
 			"settings": {
