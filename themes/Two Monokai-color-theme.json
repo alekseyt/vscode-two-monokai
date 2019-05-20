@@ -156,6 +156,7 @@
 				// user-defined constants (per Solarized Dark)
 				"constant.character",
 				"constant.escape",
+				"keyword.other.unit", // "f" in "12.5f"
 			],
 			"settings": {
 				"foreground": "#ab9df2"
