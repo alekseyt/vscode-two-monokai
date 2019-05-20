@@ -95,7 +95,6 @@
 			"name": "Keyword",
 			"scope": [
 				"keyword",
-				"keyword.other",
 				"constant.other.color",
 				"storage.modifier", // this is strange one, "override" in C++ is storage modifier
 				"storage.type.modifier", // another stange one, public/protected/private + final apparently
@@ -187,19 +186,6 @@
 				"foreground": "#ffd866"
 			}
 		},
-		// XXX: hmm, not sure about this. left of :: always categorized as namespace even in static function call
-		{
-			"name": "Namespaces",
-			"scope": [
-				"entity.name.type.namespace.scope-resolution",
-			],
-			"settings": {
-				// XXX: namespace color is the same as function color
-				// so then a call like glm::normalize() is made it's colored uniformly
-				// as a side effect, std in std::string is colored too
-				"foreground": "#a9dc76"
-			}
-		},
 		{
 			"name": "Class, Support",
 			"scope": [
@@ -214,6 +200,19 @@
 			],
 			"settings": {
 				"foreground": "#61afef"
+			}
+		},
+		// XXX: hmm, not sure about this. left of :: always categorized as namespace even in static function call
+		{
+			"name": "Namespaces",
+			"scope": [
+				"entity.name.type.namespace.scope-resolution",
+			],
+			"settings": {
+				// XXX: namespace color is the same as function color
+				// so then a call like glm::normalize() is made it's colored uniformly
+				// as a side effect, std in std::string is colored too
+				"foreground": "#a9dc76"
 			}
 		},
 		{
