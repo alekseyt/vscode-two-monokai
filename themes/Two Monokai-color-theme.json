@@ -93,6 +93,7 @@
 			"name": "Keyword",
 			"scope": [
 				"keyword",
+				"keyword.other",
 				"constant.other.color",
 				"storage.modifier", // this is strange one, "override" in C++ is storage modifier
 				"storage.type.modifier", // another stange one, public/protected/private + final apparently
@@ -164,8 +165,6 @@
 			"name": "Function Argument, Tag Attribute, Embedded",
 			"scope": [
 				"variable.parameter",
-				"keyword.other.unit",
-				"keyword.other"
 			],
 			"settings": {
 				"foreground": "#fcfcfa" // don't highlight, doesn't look good in C++ with & or *, also not really helping
