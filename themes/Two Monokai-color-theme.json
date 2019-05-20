@@ -40,7 +40,7 @@
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"meta.block variable.other",
+				"variable.other",
 			],
 			"settings": {
 				"foreground": "#fcfcfa"
@@ -50,6 +50,7 @@
 			"name": "Member access, Other Variable, String Link",
 			"scope": [
 				"variable.other.property", // member access
+				// "variable.other.object.property", // also member access
 				"support.other.variable",
 				"string constant.other.placeholder",
 				"string.other.link", // detected links will be this color too
@@ -136,7 +137,6 @@
 				"entity.name.function",
 				// somehow this assigns color to constants in arguments list
 				// e.g. "ns::call(smtg::CONSTANT);" <- "smtg::CONSTANT" will be colored
-				// "meta.function-call",
 				"variable.function",
 				"support.function",
 				"keyword.other.special-method"
@@ -186,15 +186,15 @@
 			}
 		},
 		// XXX: hmm, not sure about this. left of :: always categorized as namespace even in static function call
-		{
-			"name": "Namespaces",
-			"scope": [
-				"entity.name.type.namespace",
-			],
-			"settings": {
-				"foreground": "#fcfcfa"
-			}
-		},
+		// {
+		// 	"name": "Namespaces",
+		// 	"scope": [
+		// 		"entity.name.type.namespace",
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#fcfcfa"
+		// 	}
+		// },
 		{
 			"name": "Class, Support",
 			"scope": [
