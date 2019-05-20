@@ -41,6 +41,7 @@
 			"scope": [
 				"variable",
 				"variable.other",
+				"variable.other.object.access", // first object in chain x->y->z
 			],
 			"settings": {
 				"foreground": "#fcfcfa"
@@ -49,8 +50,8 @@
 		{
 			"name": "Member access, Other Variable, String Link",
 			"scope": [
-				"variable.other.property", // member access
-				// "variable.other.object.property", // also member access
+				"variable.other.property", // member access, last object in chain x->y->z
+				// "variable.other.object.property", // also member access, middle object in chain x->y->z
 				"support.other.variable",
 				"string constant.other.placeholder",
 				"string.other.link", // detected links will be this color too
