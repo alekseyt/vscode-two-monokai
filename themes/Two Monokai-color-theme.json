@@ -167,7 +167,7 @@
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#fc9867"
+				"foreground": "#fcfcfa" // don't highlight, doesn't look good in C++ with & or *, also not really helping
 			}
 		},
 		{
