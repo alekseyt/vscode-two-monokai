@@ -37,11 +37,20 @@
 			}
 		},
 		{
-			"name": "Variables, Block Level Variables, Other Variable, String Link",
+			"name": "Variables",
 			"scope": [
 				"variable",
-				"string constant.other.placeholder",
 				"meta.block variable.other",
+			],
+			"settings": {
+				"foreground": "#fcfcfa"
+			}
+		},
+		{
+			"name": "Block Level Variables, Other Variable, String Link",
+			"scope": [
+				"variable.other.property",
+				"string constant.other.placeholder",
 				"support.other.variable",
 				"string.other.link", // detected links will be this color too
 			],
