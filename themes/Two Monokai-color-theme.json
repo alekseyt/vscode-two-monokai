@@ -186,15 +186,15 @@
 			}
 		},
 		// XXX: hmm, not sure about this. left of :: always categorized as namespace even in static function call
-		// {
-		// 	"name": "Namespaces",
-		// 	"scope": [
-		// 		"entity.name.type.namespace",
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#fcfcfa"
-		// 	}
-		// },
+		{
+			"name": "Namespaces",
+			"scope": [
+				"entity.name.type.namespace",
+			],
+			"settings": {
+				"foreground": "#fcfcfa"
+			}
+		},
 		{
 			"name": "Class, Support",
 			"scope": [
