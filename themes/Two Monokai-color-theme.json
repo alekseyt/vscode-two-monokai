@@ -40,8 +40,6 @@
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"variable.other",
-				"variable.other.object.access", // first object in chain x->y->z
 			],
 			"settings": {
 				"foreground": "#fcfcfa"
