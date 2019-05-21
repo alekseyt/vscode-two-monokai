@@ -49,7 +49,7 @@
 			"name": "Member access, Other Variable, String Link",
 			"scope": [
 				"variable.other.property", // member access, last object in chain x->y->z
-				// "variable.other.object.property", // also member access, middle object in chain x->y->z
+				"variable.other.object.property", // also member access, middle object in chain x->y->z
 				"support.other.variable",
 				"string constant.other.placeholder",
 				"string.other.link", // detected links will be this color too
@@ -194,7 +194,8 @@
 				"meta.use.php",
 				"support.other.namespace.php",
 				"markup.changed.git_gutter",
-				"support.type.sys-types"
+				"support.type.sys-types",
+				"meta.head.namespace.cpp entity.name.type.namespace.scope-resolution.cpp", // C++17 nested namespaces
 			],
 			"settings": {
 				"foreground": "#61afef"
