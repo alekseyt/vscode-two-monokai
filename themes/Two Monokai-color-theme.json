@@ -137,7 +137,8 @@
 				// e.g. "ns::call(smtg::CONSTANT);" <- "smtg::CONSTANT" will be colored
 				"variable.function",
 				"support.function",
-				"keyword.other.special-method"
+				"keyword.other.special-method",
+				"entity.name.scope-resolution.function", // C++ function definition: void base::f(...) {}
 			],
 			"settings": {
 				"foreground": "#a9dc76"
@@ -196,7 +197,7 @@
 				"markup.changed.git_gutter",
 				"support.type.sys-types",
 				"meta.head.namespace entity.name.scope-resolution", // C++17 nested namespaces
-				"entity.name.scope-resolution.namespace.alias",
+				"entity.name.scope-resolution.namespace.alias", // C++ namespace alias: namespace tn = test::nested
 			],
 			"settings": {
 				"foreground": "#61afef"
