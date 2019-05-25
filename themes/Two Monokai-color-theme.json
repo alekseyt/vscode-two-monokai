@@ -138,7 +138,6 @@
 				"variable.function",
 				"support.function",
 				"keyword.other.special-method",
-				"entity.name.scope-resolution.function.definition", // C++ function definition: void base::f(...) {}
 			],
 			"settings": {
 				"foreground": "#a9dc76"
@@ -207,13 +206,15 @@
 		{
 			"name": "Namespaces",
 			"scope": [
-				"entity.name.scope-resolution",
-			],
-			"settings": {
 				// XXX: it would be good to have namespace color same as function color
 				// so then a call like glm::normalize() is made it's colored uniformly
 				// but as a side effect, std in std::string is colored too
 				// so for now scope-resolution highlighting is disabled
+				"entity.name.scope-resolution",
+				// XXX: this disables highlighting of return types
+				"entity.name.type.cpp",
+			],
+			"settings": {
 				"foreground": "#fcfcfa"
 			}
 		},
