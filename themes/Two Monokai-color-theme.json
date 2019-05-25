@@ -195,7 +195,8 @@
 				"support.other.namespace.php",
 				"markup.changed.git_gutter",
 				"support.type.sys-types",
-				"meta.head.namespace.cpp entity.name.type.namespace.scope-resolution.cpp", // C++17 nested namespaces
+				"meta.head.namespace entity.name.scope-resolution", // C++17 nested namespaces
+				"entity.name.scope-resolution.namespace.alias",
 			],
 			"settings": {
 				"foreground": "#61afef"
@@ -205,7 +206,7 @@
 		{
 			"name": "Namespaces",
 			"scope": [
-				"entity.name.type.namespace.scope-resolution",
+				"entity.name.scope-resolution",
 			],
 			"settings": {
 				// XXX: namespace color is the same as function color
