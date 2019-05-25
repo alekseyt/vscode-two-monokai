@@ -138,9 +138,7 @@
 				"variable.function",
 				"support.function",
 				"keyword.other.special-method",
-				// FIXME: C++ function definition: void base::f(...) {}
-				// although doesn't work uniformly with glm::normalize(glm::vec3(1))
-				// "entity.name.scope-resolution.function",
+				"entity.name.scope-resolution.function.definition", // C++ function definition: void base::f(...) {}
 			],
 			"settings": {
 				"foreground": "#a9dc76"
