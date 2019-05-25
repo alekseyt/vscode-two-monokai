@@ -138,7 +138,9 @@
 				"variable.function",
 				"support.function",
 				"keyword.other.special-method",
-				"entity.name.scope-resolution.function", // C++ function definition: void base::f(...) {}
+				// FIXME: C++ function definition: void base::f(...) {}
+				// although doesn't work uniformly with glm::normalize(glm::vec3(1))
+				// "entity.name.scope-resolution.function",
 			],
 			"settings": {
 				"foreground": "#a9dc76"
@@ -210,10 +212,11 @@
 				"entity.name.scope-resolution",
 			],
 			"settings": {
-				// XXX: namespace color is the same as function color
+				// XXX: it would be good to have namespace color same as function color
 				// so then a call like glm::normalize() is made it's colored uniformly
-				// as a side effect, std in std::string is colored too
-				"foreground": "#a9dc76"
+				// but as a side effect, std in std::string is colored too
+				// so for now scope-resolution highlighting is disabled
+				"foreground": "#fcfcfa"
 			}
 		},
 		{
