@@ -53,6 +53,7 @@
 				"support.other.variable",
 				"string constant.other.placeholder",
 				"string.other.link", // detected links will be this color too
+				"variable.other.lua", // obj.x in Lua
 			],
 			"settings": {
 				// has to be different from "storage" otherwise "const x = 10;" won't look nice in JS/TS
