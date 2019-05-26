@@ -96,6 +96,7 @@
 				"constant.other.color",
 				"storage.modifier", // this is strange one, "override" in C++ is storage modifier
 				"storage.type.modifier", // another stange one, public/protected/private + final apparently
+				"storage.modifier.local.lua", // local funtion in Lua
 			],
 			"settings": {
 				"foreground": "#ff6188"
