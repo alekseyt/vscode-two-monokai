@@ -54,6 +54,7 @@
 				"string constant.other.placeholder",
 				"string.other.link", // detected links will be this color too
 				"variable.other.lua", // obj.x in Lua
+				"support.variable.glsl", // well-known variables
 			],
 			"settings": {
 				// has to be different from "storage" otherwise "const x = 10;" won't look nice in JS/TS
@@ -84,7 +85,7 @@
 			"name": "Storage",
 			"scope": [
 				"storage.type", // mostly for C++, also used in JS ("const")
-				"storage.modifier.local", // for "local" in Lua
+				"storage.modifier.local.lua", // for "local" in Lua
 			],
 			"settings": {
 				"foreground": "#78dce8"
@@ -157,6 +158,7 @@
 				"constant.character",
 				"constant.escape",
 				"keyword.other.unit", // "f" in "12.5f"
+				"support.contant.glsl", // well-known constants
 			],
 			"settings": {
 				"foreground": "#ab9df2"
