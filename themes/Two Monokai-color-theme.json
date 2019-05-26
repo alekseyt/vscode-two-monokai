@@ -75,7 +75,11 @@
 			"name": "Invalid",
 			"scope": [
 				"invalid",
-				"invalid.illegal"
+				"invalid.illegal",
+				// doesn't look good in C++ with & or *, also not really helping
+				"variable.parameter",
+				// XXX: this disables highlighting of return types
+				"entity.name.type.cpp",
 			],
 			"settings": {
 				"foreground": "#fcfcfa"
@@ -86,6 +90,7 @@
 			"scope": [
 				"storage.type", // mostly for C++, also used in JS ("const")
 				"storage.modifier.local.lua", // for "local" in Lua
+				"entity.name.type",
 			],
 			"settings": {
 				"foreground": "#78dce8"
@@ -165,15 +170,6 @@
 			}
 		},
 		{
-			"name": "Function Argument, Tag Attribute, Embedded",
-			"scope": [
-				"variable.parameter",
-			],
-			"settings": {
-				"foreground": "#fcfcfa" // don't highlight, doesn't look good in C++ with & or *, also not really helping
-			}
-		},
-		{
 			"name": "String, Symbols, Inherited Class, Markup Heading",
 			"scope": [
 				"string",
@@ -213,13 +209,10 @@
 				// XXX: it would be good to have namespace color same as function color
 				// so then a call like glm::normalize() is made it's colored uniformly
 				// but as a side effect, std in std::string is colored too
-				// so for now scope-resolution highlighting is disabled
 				"entity.name.scope-resolution",
-				// XXX: this disables highlighting of return types
-				"entity.name.type.cpp",
 			],
 			"settings": {
-				"foreground": "#fcfcfa"
+				"foreground": "#a9dc76"
 			}
 		},
 		{
