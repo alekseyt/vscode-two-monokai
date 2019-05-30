@@ -71,7 +71,7 @@
 				"foreground": "#fcfcfa"
 			}
 		},
-		{
+		{ // also place for disabling unwanted highlighting
 			"name": "Invalid",
 			"scope": [
 				"invalid",
@@ -79,7 +79,7 @@
 				// doesn't look good in C++ with & or *, also not really helping
 				"variable.parameter",
 				// XXX: this disables highlighting of return types
-				"entity.name.type.cpp",
+				// "entity.name.type.cpp", // revert to 1.33.1
 			],
 			"settings": {
 				"foreground": "#fcfcfa"
@@ -90,7 +90,7 @@
 			"scope": [
 				"storage.type", // mostly for C++, also used in JS ("const")
 				"storage.modifier.local.lua", // for "local" in Lua
-				"entity.name.type",
+				// "entity.name.type", // revert to 1.33.1
 			],
 			"settings": {
 				"foreground": "#78dce8"
