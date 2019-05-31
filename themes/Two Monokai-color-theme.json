@@ -48,6 +48,7 @@
 		{
 			"name": "Member access, Other Variable, String Link",
 			"scope": [
+				"variable", // revert for 1.33.1
 				"variable.other.property", // member access, last object in chain x->y->z
 				"variable.other.object.property", // also member access, middle object in chain x->y->z
 				"support.other.variable",
