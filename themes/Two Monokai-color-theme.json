@@ -56,6 +56,7 @@
 				"variable", // normal variables: int x = 10; ("x" part)
 				"support.other.variable",
 				"constant.other.color",
+				"entity.name.namespace", // namespace declaration as in "namespace ns {}" ("ns part)
 			],
 			"settings": {
 				"foreground": "#fcfcfa"
@@ -126,6 +127,10 @@
 				"variable.function",
 				"support.function",
 				"keyword.other.special-method",
+				// XXX: it would be good to have namespace color same as function color
+				// so then a call like glm::normalize() is made it's colored uniformly
+				// but as a side effect, std in std::string is colored too
+				"entity.name.scope-resolution",
 			],
 			"settings": {
 				"foreground": "#a9dc76"
@@ -175,19 +180,6 @@
 			],
 			"settings": {
 				"foreground": "#61afef"
-			}
-		},
-		// XXX: hmm, not sure about this. left of :: always categorized as namespace even in static function call
-		{
-			"name": "Namespaces",
-			"scope": [
-				// XXX: it would be good to have namespace color same as function color
-				// so then a call like glm::normalize() is made it's colored uniformly
-				// but as a side effect, std in std::string is colored too
-				"entity.name.scope-resolution",
-			],
-			"settings": {
-				"foreground": "#a9dc76"
 			}
 		},
 		{
