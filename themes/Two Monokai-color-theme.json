@@ -32,11 +32,9 @@
 			"scope": [
 				"invalid",
 				"invalid.illegal",
-				// doesn't look good in C++ with & or *, also not really helping
-				"variable.parameter",
-				// XXX: this disables highlighting of return types
-				// "entity.name.type.cpp", // revert to 1.33.1
-				"entity.name.namespace", // namespace declaration as in "namespace ns {}" ("ns part)
+				"variable", // anything before dot is variable (variable.object) apparently, idk, looks really out of place when highlighted
+				"variable.parameter", // doesn't look good in C++ with & or *, also not really helping
+				// "entity.name.type.cpp", // revert to 1.33.1 // this disables highlighting of return types
 			],
 			"settings": {
 				"foreground": "#fcfcfa"
@@ -73,18 +71,10 @@
 			}
 		},
 		{
-			"name": "Variables",
-			"scope": [
-				"variable", // anything passed to a function is a variable apparently, or it detect class members, idk
-			],
-			"settings": {
-				"foreground": "#fcfcfa"
-			}
-		},
-		{
 			"name": "Member access, Other Variable, String Link",
 			"scope": [
 				"variable.other.property", // member access, last object in chain x->y->z
+				"variable.other.member", // also member access, e.g. "rbg" part in "color.rgb"
 				"variable.other.object.property", // also member access, middle object in chain x->y->z
 				"string.other.link", // detected links will be this color too
 				"variable.other.lua", // obj.x in Lua ("x" part)
@@ -122,6 +112,7 @@
 				// so then a call like glm::normalize() is made it's colored uniformly
 				// but as a side effect, std in std::string is colored too
 				"entity.name.scope-resolution",
+				"entity.name.namespace", // name in namespace declaration as in "namespace ns {}" ("ns" part)
 			],
 			"settings": {
 				"foreground": "#a9dc76"
@@ -134,7 +125,6 @@
 				"support.constant",
 				// built-in constant (per Solarized Dark)
 				"constant.language",
-				"meta.preprocessor",
 				// user-defined constants (per Solarized Dark)
 				"constant.character",
 				"constant.escape",
