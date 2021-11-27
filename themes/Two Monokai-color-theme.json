@@ -14,6 +14,8 @@
 		"statusBar.debuggingBackground": "#333333",
 		"statusBar.noFolderBackground": "#333333",
 		"statusBar.foreground": "#adadad", // match sidebar icons color
+		"statusBarItem.remoteBackground": "#333333", // for WSL segment
+		"statusBarItem.remoteForeground": "#adadad",
 		"tab.inactiveForeground": "#bbbbbb", // not too gray for better readability, default was #969696
 		"titleBar.activeBackground": "#333333",
 		// derived from Monokai
