@@ -20,5 +20,8 @@
                 "path": "./themes/Two Monokai-color-theme.json"
             }
         ]
+    },
+    "devDependencies": {
+        "vsce": "^2.10.0"
     }
 }
