@@ -55,6 +55,12 @@
 				"storage.type.enum", // enum, enum class
 				"storage.type.namespace", // don't ask me
 				"storage.type.template", // sigh, "template <typename T> ..."
+				// typescript
+				"storage.type.function.arrow.ts", // "=>"
+				"storage.type.property.ts", // "get"
+				"storage.type.interface.ts", // "interface"
+				"storage.type.type.ts", // "type"
+				"storage.type.function.ts", // "function"
 			],
 			"settings": {
 				"foreground": "#ff6188"
