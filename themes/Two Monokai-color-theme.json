@@ -4,7 +4,7 @@
 // https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide
 
 {
-	"name": "Two Monokai",
+	"name": "Eleven Monokai",
 	"type": "dark",
 	"colors": {
 		"editor.lineHighlightBackground": "#4444447f", // note transparency, used to dim line highlight
@@ -83,6 +83,7 @@
 			"name": "Member access, Other Variable, String Link",
 			"scope": [
 				"variable.other.property", // member access, last object in chain x->y->z
+				"variable.object.property", // member declaration: private x: number
 				"variable.other.member", // also member access, e.g. "rbg" part in "color.rgb"
 				"variable.other.object.property", // also member access, middle object in chain x->y->z
 				"string.other.link", // detected links will be this color too
