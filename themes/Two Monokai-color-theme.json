@@ -89,7 +89,6 @@
 				"string.other.link", // detected links will be this color too
 				"variable.other.lua", // obj.x in Lua ("x" part)
 				"support.variable.glsl", // well-known variables: gl_FragColor, gl_FragData
-				"string constant.other.placeholder", // "%s" in printf etc
 				"support.other.variable",
 				"constant.other.color",
 			],
@@ -140,6 +139,7 @@
 				"constant.escape",
 				"keyword.other.unit", // "f" in "12.5f"
 				"support.contant.glsl", // well-known constants
+				"string constant.other.placeholder", // "%s" in printf etc
 			],
 			"settings": {
 				"foreground": "#ab9df2"
