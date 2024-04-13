@@ -39,10 +39,17 @@ Derived from Monokai Dimmed:
 * Comments color: <span style="color:#9a9b99">#9a9b99</span>
 * Some other UI colors too (status bar, etc)
 
-Tested on C++, Lua, Markdown will also get some love (not too much).
-Shell seems to work fine too, as well as GLSL, but don't quote me
-on that.
+Tested on C++, Lua, Typescript. Markdown will also get some love
+(not too much). Shell seems to work fine too, as well as GLSL, but
+don't quote me on that.
 
 Other languages might also work, i don't know. Theme isn't tailored for
 any particular language specifically, but it has quirks for C++ and
 Lua here and there.
+
+P.S.
+
+[Two Monokai][] was taken, so it was renamed to Eleven Monokai to leave
+a room for Three Monokai, Four Monokai and so on.
+
+[Two Monokai]: https://marketplace.visualstudio.com/items?itemName=khan.two-monokai
