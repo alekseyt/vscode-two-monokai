@@ -27,6 +27,8 @@
 		// massively derived from Monokai Dimmed
 		"editorGroupHeader.tabsBackground": "#282828",
 		"terminal.ansiWhite": "#ffffff",
+		// brackets match color is actually coming from default text color in file explorer and it is pure gray
+		"editorBracketMatch.border": "#cccccc",
 	},
 	"tokenColors": [
 		{ // also place for disabling unwanted highlighting
