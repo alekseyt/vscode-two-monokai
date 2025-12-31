@@ -3,6 +3,9 @@
     "displayName": "Eleven Monokai",
     "description": "Eleven! Eleven Monokai!",
     "version": "0.0.1",
+    "scripts": {
+        "build": "vsce package"
+    },
     "repository": {
         "url": "https://github.com/alekseyt/vscode-two-monokai"
     },

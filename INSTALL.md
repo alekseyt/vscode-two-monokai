@@ -1,3 +1,4 @@
-1. `./build-vsix.sh`
-2. `Ctrl`+`Shift`+`P` -> Install from VSIX
-3. Feels good, man
+1. `npm install`
+2. `npm run build`
+3. `Ctrl`+`Shift`+`P` -> Install from VSIX
+4. Feels good, man
