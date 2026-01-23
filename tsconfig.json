@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+
+    "allowImportingTsExtensions": true, // Needed to run TS in node
+
+    // Strict Checks
+    "strict": true,
+    "alwaysStrict": true, // Ensures that your files are parsed in the ECMAScript strict mode, and emit “use strict” for each source file.
+    "strictNullChecks": true, // When strictNullChecks is true, null and undefined have their own distinct types and you’ll get a type error if you try to use them where a concrete value is expected.
+
+    // Linter Checks
+    "forceConsistentCasingInFileNames": true,
+    "allowUnreachableCode": false, // pick up dead code paths
+    "noImplicitReturns": true,
+    "noUnusedLocals": true, // Report errors on unused local variables.
+    "noImplicitAny": true, // In some cases where no type annotations are present, TypeScript will fall back to a type of any for a variable when it cannot infer the type.
+    "noImplicitThis": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true, // accessing index must always check for undefined
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true
+  },
+  "include": ["./**/*.ts", "./**/*.mjs"],
+  "exclude": ["./node_modules/**/*"]
+}
