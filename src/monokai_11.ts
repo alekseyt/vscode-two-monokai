@@ -1,3 +1,5 @@
+import * as scopes from "./scopes.ts"
+
 export interface ThemeSettingsI {
   name: string
   type: "dark" | "light"
@@ -31,7 +33,7 @@ const monokaipro = {
     green: "#269d69",
     cyan: "#1c8ca8",
     magenta: "#7058be",
-  }
+  },
 }
 
 const onedark = {
@@ -73,7 +75,7 @@ const semantics = {
     arguments: monokaipro.light.orange,
     // members: // TODO
     // comments: // TODO
-  }
+  },
 }
 
 type SemanticsT = typeof semantics.dark
@@ -123,65 +125,28 @@ function makeDark(semantics: SemanticsT) {
       {
         // also place for disabling unwanted highlighting
         name: "Invalid",
-        scope: [
-          "invalid",
-          "invalid.illegal",
-          "variable", // anything before dot is variable (variable.object) apparently, idk, looks really out of place when highlighted
-          "variable.parameter", // doesn't look good in C++ with & or *, also not really helping
-          // "entity.name.type.cpp", // revert to 1.33.1 // this disables highlighting of return types
-        ],
+        scope: scopes.INVALID,
         settings: {
           foreground: semantics.unmarked,
         },
       },
       {
         name: "Keywords",
-        scope: [
-          "keyword",
-          "constant.other.color",
-          "storage.modifier", // this is strange one, "override" in C++ is storage modifier
-          "storage.type.modifier", // another stange one, public/protected/private + final apparently
-          "storage.type.struct", // storage.type goes to types, but class and struct are keywords
-          // bleh
-          "storage.type.class", // mostly for C++: class, struct, also used in JS ("const")
-          "storage.type.enum", // enum, enum class
-          "storage.type.namespace", // don't ask me
-          "storage.type.template", // sigh, "template <typename T> ..."
-          // typescript
-          "storage.type.function.arrow.ts", // "=>"
-          "storage.type.property.ts", // "get"
-          "storage.type.interface.ts", // "interface"
-          "storage.type.type.ts", // "type"
-          "storage.type.function.ts", // "function"
-        ],
+        scope: scopes.KEYWORDS,
         settings: {
           foreground: semantics.keywords,
         },
       },
       {
         name: "Types",
-        scope: [
-          "entity.name", // usually argument type, class name or whatever after :: (idk why)
-          "entity.other.inherited-class", // typescript base class (implemented interface)
-          "storage.type", // int, float, bool
-          "support.type",
-          "support.class",
-        ],
+        scope: scopes.TYPES,
         settings: {
           foreground: semantics.types,
         },
       },
       {
-        name: "Member access, Other Variable, String Link",
-        scope: [
-          "variable.other.property", // member access, last object in chain x->y->z
-          "variable.object.property", // member declaration: private x: number
-          "variable.other.member", // also member access, e.g. "rbg" part in "color.rgb"
-          "variable.other.object.property", // also member access, middle object in chain x->y->z
-          "string.other.link", // detected links will be this color too
-          "variable.other.lua", // obj.x in Lua ("x" part)
-          "support.variable.glsl", // well-known variables: gl_FragColor, gl_FragData
-        ],
+        name: "Member access",
+        scope: scopes.MEMBERS,
         settings: {
           // has to be different from "storage" otherwise "const x = 10;" won't look nice in JS/TS
           // this color is also used in C's "x->y", for coloring "y"
@@ -190,95 +155,63 @@ function makeDark(semantics: SemanticsT) {
       },
       {
         name: "Comments",
-        scope: ["comment", "punctuation.definition.comment"],
+        scope: scopes.COMMENTS,
         settings: {
           foreground: semantics.comments,
         },
       },
       {
-        name: "Function, Special Method",
-        scope: [
-          "entity.name.function",
-          // somehow this assigns color to constants in arguments list
-          // e.g. "ns::call(smtg::CONSTANT);" <- "smtg::CONSTANT" will be colored
-          "variable.function",
-          "support.function",
-          "keyword.other.special-method",
-          // XXX: it would be good to have namespace color same as function color
-          // so then a call like glm::normalize() is made it's colored uniformly
-          // but as a side effect, std in std::string is colored too
-          "entity.name.scope-resolution",
-          "entity.name.namespace", // name in namespace declaration as in "namespace ns {}" ("ns" part)
-        ],
+        name: "Functions, Methods",
+        scope: scopes.FUNCTIONS,
         settings: {
           foreground: semantics.functions,
         },
       },
       {
         name: "Function arguments",
-        scope: [
-          "variable.parameter",
-        ],
+        scope: scopes.ARGUMENTS,
         settings: {
           foreground: semantics.arguments,
-        }
+        },
       },
       {
         name: "Number, Constant, Tag Attribute, Embedded",
-        scope: [
-          "constant.numeric",
-          "support.constant",
-          // built-in constant (per Solarized Dark)
-          "constant.language",
-          // user-defined constants (per Solarized Dark)
-          "constant.character",
-          "constant.escape",
-          "keyword.other.unit", // "f" in "12.5f"
-          "support.contant.glsl", // well-known constants
-          "string constant.other.placeholder", // "%s" in printf etc
-        ],
+        scope: scopes.CONSTANTS,
         settings: {
           foreground: semantics.constants,
         },
       },
       {
         name: "String, Symbols, Markup Heading",
-        scope: [
-          "string",
-          "constant.other.symbol",
-          "constant.other.key",
-          "markup.heading",
-          "markup.inserted.git_gutter",
-          "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
-        ],
+        scope: scopes.STRINGS,
         settings: {
           foreground: semantics.strings,
         },
       },
       {
         name: "Tag",
-        scope: ["entity.name.tag", "meta.tag.sgml", "markup.deleted.git_gutter"],
+        scope: scopes.TAGS,
         settings: {
           foreground: semantics.keywords,
         },
       },
       {
         name: "Sub-methods",
-        scope: ["entity.name.module.js", "variable.import.parameter.js", "variable.other.class.js"],
+        scope: scopes.SUBMETHODS,
         settings: {
           foreground: semantics.keywords,
         },
       },
       {
         name: "Language methods",
-        scope: ["variable.language"],
+        scope: scopes.LANGMETHODS,
         settings: {
           foreground: semantics.keywords,
         },
       },
       {
         name: "Attributes", // tag attributes (per Solarized Dark)
-        scope: ["entity.other.attribute-name"],
+        scope: scopes.ATTRIBUTES,
         settings: {
           foreground: semantics.constants,
         },
@@ -299,21 +232,21 @@ function makeDark(semantics: SemanticsT) {
       },
       {
         name: "Decorators",
-        scope: ["tag.decorator.js entity.name.tag.js", "tag.decorator.js punctuation.definition.tag.js"],
+        scope: scopes.DECORATORS,
         settings: {
           foreground: semantics.types,
         },
       },
       {
         name: "ES7 Bind Operator",
-        scope: ["source.js constant.other.object.key.js string.unquoted.label.js"],
+        scope: scopes.ES7BINDOP,
         settings: {
           foreground: semantics.keywords,
         },
       },
       {
         name: "URL",
-        scope: ["*url*", "*link*", "*uri*"],
+        scope: scopes.URL,
         settings: {
           fontStyle: "underline",
         },
@@ -322,51 +255,54 @@ function makeDark(semantics: SemanticsT) {
       // (except actual colors)
       {
         name: "Markup Quote, Lists",
-        scope: ["markup.quote", "markup.list", "markup.other"],
+        scope: scopes.MARKUP_LIST,
         settings: {
           foreground: semantics.markup.list,
         },
       },
       {
         name: "Markup Styling",
-        scope: ["markup.bold", "markup.italic"],
+        scope: scopes.MARKUP_STYLING,
         settings: {
           foreground: semantics.markup.styling,
         },
       },
       {
         name: "Markup Headings", // not actually headings, just ## marks
-        scope: [
-          "markup.heading",
-          "markup.heading.setext",
-          "constant.other.reference.link.markdown", // link anchor
-        ],
+        scope: scopes.MARKUP_HEADINGS,
         settings: {
           foreground: semantics.markup.heading,
         },
       },
       {
         name: "Markup Heading Text",
-        scope: ["markup.heading entity.name"],
+        scope: scopes.MARKUP_HEADINGTEXT,
         settings: {
           foreground: semantics.markup.headingText,
         },
       },
       {
         name: "Markup Inline",
-        scope: ["markup.inline.raw", "markup.raw"],
+        scope: scopes.MARKUP_INLINE,
         settings: {
           foreground: semantics.markup.inline,
         },
       },
       {
         name: "Markdown - Link",
-        scope: ["markup.underline.link.markdown"],
+        scope: scopes.MARKUP_LINK,
         settings: {
           // maybe it's a good idea to have this same color as String Link
           foreground: semantics.markup.link,
         },
       },
     ],
+  }
+}
+
+function makeLight(semantics: SemanticsT) {
+  return {
+    colors: {},
+    tokenColors: [],
   }
 }
