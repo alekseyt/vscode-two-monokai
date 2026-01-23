@@ -6,10 +6,8 @@ export interface ThemeSettingsI {
 }
 
 export function makeThemeObject(settings: ThemeSettingsI) {
-  console.assert(settings.type === "dark", "Light theme is not supported (yet)")
-
   const commonObj = makeCommon(settings)
-  const themeObj = makeDark(semantics.dark)
+  const themeObj = makeDark(settings.type === "dark" ? semantics.dark : semantics.light)
   const finalObj = { ...commonObj, ...themeObj }
 
   return finalObj
@@ -73,8 +71,17 @@ const semantics = {
     strings: monokaipro.light.yellow,
     functions: monokaipro.light.green,
     arguments: monokaipro.light.orange,
-    // members: // TODO
-    // comments: // TODO
+    members: onedark.blue, // TODO
+    comments: monokaidimmed.comments, // TODO
+
+    markup: {
+      list: monokaipro.dark.green,
+      styling: monokaipro.dark.red,
+      heading: monokaipro.dark.red,
+      headingText: monokaipro.dark.yellow,
+      inline: monokaipro.dark.cyan,
+      link: onedark.blue,
+    },
   },
 }
 

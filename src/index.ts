@@ -13,6 +13,11 @@ const THEMES: ThemeDescriptionI[] = [
     type: "dark",
     file: path.join(THEMES_DIRECTORY, "Two Monokai (Dark).json"),
   },
+  {
+    name: "Eleven Monokai",
+    type: "light",
+    file: path.join(THEMES_DIRECTORY, "Two Monokai (Light).json"),
+  },
 ]
 
 await fs.mkdir(THEMES_DIRECTORY, {

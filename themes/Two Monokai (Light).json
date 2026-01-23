@@ -1,6 +1,6 @@
 {
   "name": "Eleven Monokai",
-  "type": "dark",
+  "type": "light",
   "semanticHighlighting": true,
   "colors": {
     "editor.lineHighlightBackground": "#4444447f",
@@ -30,7 +30,7 @@
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#fcfcfa"
+        "foreground": "#1c1514"
       }
     },
     {
@@ -52,7 +52,7 @@
         "storage.type.function.ts"
       ],
       "settings": {
-        "foreground": "#ff6188"
+        "foreground": "#e14775"
       }
     },
     {
@@ -65,7 +65,7 @@
         "support.class"
       ],
       "settings": {
-        "foreground": "#78dce8"
+        "foreground": "#1c8ca8"
       }
     },
     {
@@ -104,7 +104,7 @@
         "entity.name.namespace"
       ],
       "settings": {
-        "foreground": "#a9dc76"
+        "foreground": "#269d69"
       }
     },
     {
@@ -113,7 +113,7 @@
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#fc9867"
+        "foreground": "#e16032"
       }
     },
     {
@@ -129,7 +129,7 @@
         "string constant.other.placeholder"
       ],
       "settings": {
-        "foreground": "#ab9df2"
+        "foreground": "#7058be"
       }
     },
     {
@@ -143,7 +143,7 @@
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
-        "foreground": "#ffd866"
+        "foreground": "#cc7a0a"
       }
     },
     {
@@ -154,7 +154,7 @@
         "markup.deleted.git_gutter"
       ],
       "settings": {
-        "foreground": "#ff6188"
+        "foreground": "#e14775"
       }
     },
     {
@@ -165,7 +165,7 @@
         "variable.other.class.js"
       ],
       "settings": {
-        "foreground": "#ff6188"
+        "foreground": "#e14775"
       }
     },
     {
@@ -174,7 +174,7 @@
         "variable.language"
       ],
       "settings": {
-        "foreground": "#ff6188"
+        "foreground": "#e14775"
       }
     },
     {
@@ -183,7 +183,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#ab9df2"
+        "foreground": "#7058be"
       }
     },
     {
@@ -192,7 +192,7 @@
         "string.regexp"
       ],
       "settings": {
-        "foreground": "#ab9df2"
+        "foreground": "#7058be"
       }
     },
     {
@@ -201,7 +201,7 @@
         "constant.character.escape"
       ],
       "settings": {
-        "foreground": "#78dce8"
+        "foreground": "#1c8ca8"
       }
     },
     {
@@ -211,7 +211,7 @@
         "tag.decorator.js punctuation.definition.tag.js"
       ],
       "settings": {
-        "foreground": "#78dce8"
+        "foreground": "#1c8ca8"
       }
     },
     {
@@ -220,7 +220,7 @@
         "source.js constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
-        "foreground": "#ff6188"
+        "foreground": "#e14775"
       }
     },
     {
