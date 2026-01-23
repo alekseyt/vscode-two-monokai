@@ -5,9 +5,10 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "compile": "tsc",
     "make_theme": "node src/index.ts",
     "make_vsce": "vsce package",
-    "build": "run-s make_theme make_vsce",
+    "build": "run-s compile make_theme make_vsce",
     "format": "prettier --write ./**/*.{json,ts,mjs}"
   },
   "repository": {
@@ -37,6 +38,7 @@
     "@types/node": "^25.0.10",
     "@vscode/vsce": "^3.7.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.8.1"
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3"
   }
 }
