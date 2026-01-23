@@ -121,188 +121,192 @@ function makeDark(semantics: SemanticsT) {
       // brackets match color is actually coming from default text color in file explorer and it is pure gray
       "editorBracketMatch.border": "#cccccc",
     },
-    tokenColors: [
-      {
-        // also place for disabling unwanted highlighting
-        name: "Invalid",
-        scope: scopes.INVALID,
-        settings: {
-          foreground: semantics.unmarked,
-        },
-      },
-      {
-        name: "Keywords",
-        scope: scopes.KEYWORDS,
-        settings: {
-          foreground: semantics.keywords,
-        },
-      },
-      {
-        name: "Types",
-        scope: scopes.TYPES,
-        settings: {
-          foreground: semantics.types,
-        },
-      },
-      {
-        name: "Member access",
-        scope: scopes.MEMBERS,
-        settings: {
-          // has to be different from "storage" otherwise "const x = 10;" won't look nice in JS/TS
-          // this color is also used in C's "x->y", for coloring "y"
-          foreground: semantics.members,
-        },
-      },
-      {
-        name: "Comments",
-        scope: scopes.COMMENTS,
-        settings: {
-          foreground: semantics.comments,
-        },
-      },
-      {
-        name: "Functions, Methods",
-        scope: scopes.FUNCTIONS,
-        settings: {
-          foreground: semantics.functions,
-        },
-      },
-      {
-        name: "Function arguments",
-        scope: scopes.ARGUMENTS,
-        settings: {
-          foreground: semantics.arguments,
-        },
-      },
-      {
-        name: "Number, Constant, Tag Attribute, Embedded",
-        scope: scopes.CONSTANTS,
-        settings: {
-          foreground: semantics.constants,
-        },
-      },
-      {
-        name: "String, Symbols, Markup Heading",
-        scope: scopes.STRINGS,
-        settings: {
-          foreground: semantics.strings,
-        },
-      },
-      {
-        name: "Tag",
-        scope: scopes.TAGS,
-        settings: {
-          foreground: semantics.keywords,
-        },
-      },
-      {
-        name: "Sub-methods",
-        scope: scopes.SUBMETHODS,
-        settings: {
-          foreground: semantics.keywords,
-        },
-      },
-      {
-        name: "Language methods",
-        scope: scopes.LANGMETHODS,
-        settings: {
-          foreground: semantics.keywords,
-        },
-      },
-      {
-        name: "Attributes", // tag attributes (per Solarized Dark)
-        scope: scopes.ATTRIBUTES,
-        settings: {
-          foreground: semantics.constants,
-        },
-      },
-      {
-        name: "Regular Expressions",
-        scope: ["string.regexp"],
-        settings: {
-          foreground: semantics.constants,
-        },
-      },
-      {
-        name: "Escape Characters",
-        scope: ["constant.character.escape"],
-        settings: {
-          foreground: semantics.types,
-        },
-      },
-      {
-        name: "Decorators",
-        scope: scopes.DECORATORS,
-        settings: {
-          foreground: semantics.types,
-        },
-      },
-      {
-        name: "ES7 Bind Operator",
-        scope: scopes.ES7BINDOP,
-        settings: {
-          foreground: semantics.keywords,
-        },
-      },
-      {
-        name: "URL",
-        scope: scopes.URL,
-        settings: {
-          fontStyle: "underline",
-        },
-      },
-      // markdown stuff is coming mostly from Solarized Dark
-      // (except actual colors)
-      {
-        name: "Markup Quote, Lists",
-        scope: scopes.MARKUP_LIST,
-        settings: {
-          foreground: semantics.markup.list,
-        },
-      },
-      {
-        name: "Markup Styling",
-        scope: scopes.MARKUP_STYLING,
-        settings: {
-          foreground: semantics.markup.styling,
-        },
-      },
-      {
-        name: "Markup Headings", // not actually headings, just ## marks
-        scope: scopes.MARKUP_HEADINGS,
-        settings: {
-          foreground: semantics.markup.heading,
-        },
-      },
-      {
-        name: "Markup Heading Text",
-        scope: scopes.MARKUP_HEADINGTEXT,
-        settings: {
-          foreground: semantics.markup.headingText,
-        },
-      },
-      {
-        name: "Markup Inline",
-        scope: scopes.MARKUP_INLINE,
-        settings: {
-          foreground: semantics.markup.inline,
-        },
-      },
-      {
-        name: "Markdown - Link",
-        scope: scopes.MARKUP_LINK,
-        settings: {
-          // maybe it's a good idea to have this same color as String Link
-          foreground: semantics.markup.link,
-        },
-      },
-    ],
+    tokenColors: makeTokenColors(semantics),
   }
 }
 
 function makeLight(semantics: SemanticsT) {
   return {
     colors: {},
-    tokenColors: [],
+    tokenColors: makeTokenColors(semantics),
   }
+}
+
+function makeTokenColors(semantics: SemanticsT) {
+  return [
+    {
+      // also place for disabling unwanted highlighting
+      name: "Invalid",
+      scope: scopes.INVALID,
+      settings: {
+        foreground: semantics.unmarked,
+      },
+    },
+    {
+      name: "Keywords",
+      scope: scopes.KEYWORDS,
+      settings: {
+        foreground: semantics.keywords,
+      },
+    },
+    {
+      name: "Types",
+      scope: scopes.TYPES,
+      settings: {
+        foreground: semantics.types,
+      },
+    },
+    {
+      name: "Member access",
+      scope: scopes.MEMBERS,
+      settings: {
+        // has to be different from "storage" otherwise "const x = 10;" won't look nice in JS/TS
+        // this color is also used in C's "x->y", for coloring "y"
+        foreground: semantics.members,
+      },
+    },
+    {
+      name: "Comments",
+      scope: scopes.COMMENTS,
+      settings: {
+        foreground: semantics.comments,
+      },
+    },
+    {
+      name: "Functions, Methods",
+      scope: scopes.FUNCTIONS,
+      settings: {
+        foreground: semantics.functions,
+      },
+    },
+    {
+      name: "Function arguments",
+      scope: scopes.ARGUMENTS,
+      settings: {
+        foreground: semantics.arguments,
+      },
+    },
+    {
+      name: "Number, Constant, Tag Attribute, Embedded",
+      scope: scopes.CONSTANTS,
+      settings: {
+        foreground: semantics.constants,
+      },
+    },
+    {
+      name: "String, Symbols, Markup Heading",
+      scope: scopes.STRINGS,
+      settings: {
+        foreground: semantics.strings,
+      },
+    },
+    {
+      name: "Tag",
+      scope: scopes.TAGS,
+      settings: {
+        foreground: semantics.keywords,
+      },
+    },
+    {
+      name: "Sub-methods",
+      scope: scopes.SUBMETHODS,
+      settings: {
+        foreground: semantics.keywords,
+      },
+    },
+    {
+      name: "Language methods",
+      scope: scopes.LANGMETHODS,
+      settings: {
+        foreground: semantics.keywords,
+      },
+    },
+    {
+      name: "Attributes", // tag attributes (per Solarized Dark)
+      scope: scopes.ATTRIBUTES,
+      settings: {
+        foreground: semantics.constants,
+      },
+    },
+    {
+      name: "Regular Expressions",
+      scope: ["string.regexp"],
+      settings: {
+        foreground: semantics.constants,
+      },
+    },
+    {
+      name: "Escape Characters",
+      scope: ["constant.character.escape"],
+      settings: {
+        foreground: semantics.types,
+      },
+    },
+    {
+      name: "Decorators",
+      scope: scopes.DECORATORS,
+      settings: {
+        foreground: semantics.types,
+      },
+    },
+    {
+      name: "ES7 Bind Operator",
+      scope: scopes.ES7BINDOP,
+      settings: {
+        foreground: semantics.keywords,
+      },
+    },
+    {
+      name: "URL",
+      scope: scopes.URL,
+      settings: {
+        fontStyle: "underline",
+      },
+    },
+    // markdown stuff is coming mostly from Solarized Dark
+    // (except actual colors)
+    {
+      name: "Markup Quote, Lists",
+      scope: scopes.MARKUP_LIST,
+      settings: {
+        foreground: semantics.markup.list,
+      },
+    },
+    {
+      name: "Markup Styling",
+      scope: scopes.MARKUP_STYLING,
+      settings: {
+        foreground: semantics.markup.styling,
+      },
+    },
+    {
+      name: "Markup Headings", // not actually headings, just ## marks
+      scope: scopes.MARKUP_HEADINGS,
+      settings: {
+        foreground: semantics.markup.heading,
+      },
+    },
+    {
+      name: "Markup Heading Text",
+      scope: scopes.MARKUP_HEADINGTEXT,
+      settings: {
+        foreground: semantics.markup.headingText,
+      },
+    },
+    {
+      name: "Markup Inline",
+      scope: scopes.MARKUP_INLINE,
+      settings: {
+        foreground: semantics.markup.inline,
+      },
+    },
+    {
+      name: "Markdown - Link",
+      scope: scopes.MARKUP_LINK,
+      settings: {
+        // maybe it's a good idea to have this same color as String Link
+        foreground: semantics.markup.link,
+      },
+    },
+  ]
 }
