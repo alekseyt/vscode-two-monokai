@@ -1,6 +1,7 @@
 {
   "name": "Eleven Monokai",
   "type": "dark",
+  "semanticHighlighting": true,
   "colors": {
     "editor.lineHighlightBackground": "#4444447f",
     "editorLineNumber.activeForeground": "#78dce8",

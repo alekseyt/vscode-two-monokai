@@ -5,14 +5,12 @@ export interface ThemeSettingsI {
 
 export function makeThemeObject(settings: ThemeSettingsI) {
   console.assert(settings.type === "dark", "Light theme is not supported (yet)")
-  const obj = makeDark(semantics.dark)
 
-  return {
-    name: settings.name,
-    type: settings.type,
-    colors: obj.colors,
-    tokenColors: obj.tokenColors,
-  }
+  const commonObj = makeCommon(settings)
+  const themeObj = makeDark(semantics.dark)
+  const finalObj = { ...commonObj, ...themeObj }
+
+  return finalObj
 }
 
 const monokaipro = {
@@ -59,6 +57,16 @@ const semantics = {
 }
 
 type SemanticsT = typeof semantics.dark
+
+// https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-coloring-in-color-themes
+
+function makeCommon(settings: ThemeSettingsI) {
+  return {
+    name: settings.name,
+    type: settings.type,
+    semanticHighlighting: true,
+  }
+}
 
 // https://code.visualstudio.com/api/references/theme-color
 // https://code.visualstudio.com/docs/getstarted/themes
