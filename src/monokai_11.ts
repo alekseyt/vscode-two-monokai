@@ -7,7 +7,7 @@ export interface ThemeSettingsI {
 
 export function makeThemeObject(settings: ThemeSettingsI) {
   const commonObj = makeCommon(settings)
-  const themeObj = makeDark(settings.type === "dark" ? semantics.dark : semantics.light)
+  const themeObj = settings.type === "dark" ? makeDark(semantics.dark) : makeLight(semantics.light)
   const finalObj = { ...commonObj, ...themeObj }
 
   return finalObj
