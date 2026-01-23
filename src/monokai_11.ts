@@ -42,6 +42,7 @@ const semantics = {
     constants: monokaipro.dark.magenta,
     strings: monokaipro.dark.yellow,
     functions: monokaipro.dark.green,
+    arguments: monokaipro.dark.orange,
     members: onedark.blue,
     comments: monokaidimmed.comments,
 
@@ -195,7 +196,16 @@ function makeDark(semantics: SemanticsT) {
         },
       },
       {
-        name: "Number, Constant, Function Argument, Tag Attribute, Embedded",
+        name: "Function arguments",
+        scope: [
+          "variable.parameter",
+        ],
+        settings: {
+          foreground: semantics.arguments,
+        }
+      },
+      {
+        name: "Number, Constant, Tag Attribute, Embedded",
         scope: [
           "constant.numeric",
           "support.constant",

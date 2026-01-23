@@ -108,7 +108,16 @@
       }
     },
     {
-      "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+      "name": "Function arguments",
+      "scope": [
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#fc9867"
+      }
+    },
+    {
+      "name": "Number, Constant, Tag Attribute, Embedded",
       "scope": [
         "constant.numeric",
         "support.constant",
