@@ -77,9 +77,7 @@
         "variable.other.object.property",
         "string.other.link",
         "variable.other.lua",
-        "support.variable.glsl",
-        "support.other.variable",
-        "constant.other.color"
+        "support.variable.glsl"
       ],
       "settings": {
         "foreground": "#61afef"
@@ -137,19 +135,6 @@
       ],
       "settings": {
         "foreground": "#ffd866"
-      }
-    },
-    {
-      "name": "Support",
-      "scope": [
-        "support.orther.namespace.use.php",
-        "meta.use.php",
-        "support.other.namespace.php",
-        "markup.changed.git_gutter",
-        "support.type.sys-types"
-      ],
-      "settings": {
-        "foreground": "#61afef"
       }
     },
     {

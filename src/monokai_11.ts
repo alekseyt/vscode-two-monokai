@@ -161,8 +161,6 @@ function makeDark(semantics: SemanticsT) {
           "string.other.link", // detected links will be this color too
           "variable.other.lua", // obj.x in Lua ("x" part)
           "support.variable.glsl", // well-known variables: gl_FragColor, gl_FragData
-          "support.other.variable",
-          "constant.other.color",
         ],
         settings: {
           // has to be different from "storage" otherwise "const x = 10;" won't look nice in JS/TS
@@ -226,19 +224,6 @@ function makeDark(semantics: SemanticsT) {
         ],
         settings: {
           foreground: semantics.strings,
-        },
-      },
-      {
-        name: "Support",
-        scope: [
-          "support.orther.namespace.use.php",
-          "meta.use.php",
-          "support.other.namespace.php",
-          "markup.changed.git_gutter",
-          "support.type.sys-types",
-        ],
-        settings: {
-          foreground: semantics.members,
         },
       },
       {
