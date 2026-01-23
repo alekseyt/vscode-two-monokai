@@ -15,15 +15,23 @@ export function makeThemeObject(settings: ThemeSettingsI) {
 
 const monokaipro = {
   dark: {
-    black: "#2c292d",
     white: "#fcfcfa",
     red: "#ff6188",
-    green: "#a9dc76",
-    yellow: "#ffd866",
     orange: "#fc9867",
+    yellow: "#ffd866",
+    green: "#a9dc76",
     cyan: "#78dce8",
     magenta: "#ab9df2",
   },
+  light: {
+    black: "#1c1514",
+    red: "#e14775",
+    orange: "#e16032",
+    yellow: "#cc7a0a",
+    green: "#269d69",
+    cyan: "#1c8ca8",
+    magenta: "#7058be",
+  }
 }
 
 const onedark = {
@@ -55,6 +63,17 @@ const semantics = {
       link: onedark.blue,
     },
   },
+  light: {
+    unmarked: monokaipro.light.black,
+    keywords: monokaipro.light.red,
+    types: monokaipro.light.cyan,
+    constants: monokaipro.light.magenta,
+    strings: monokaipro.light.yellow,
+    functions: monokaipro.light.green,
+    arguments: monokaipro.light.orange,
+    // members: // TODO
+    // comments: // TODO
+  }
 }
 
 type SemanticsT = typeof semantics.dark
