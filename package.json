@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "compile": "tsc --noEmit",
+    "compile": "tsc",
     "make_theme": "node src/index.ts",
     "make_vsce": "vsce package",
     "build": "run-s compile make_theme make_vsce",

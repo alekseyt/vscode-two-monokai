@@ -4,6 +4,7 @@
     "module": "esnext",
     "moduleResolution": "node",
 
+    "noEmit": true,
     "allowImportingTsExtensions": true, // Needed to run TS in node
 
     // Strict Checks
