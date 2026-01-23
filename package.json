@@ -1,7 +1,7 @@
 {
     "name": "eleven-monokai",
-    "displayName": "Eleven Monokai",
-    "description": "Eleven! Eleven Monokai!",
+    "displayName": "%displayName%",
+    "description": "%description%",
     "version": "0.0.1",
     "scripts": {
         "build": "vsce package"
@@ -18,7 +18,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "Eleven Monokai",
+                "label": "%themeLabel%",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Two Monokai-color-theme.json"
             }
