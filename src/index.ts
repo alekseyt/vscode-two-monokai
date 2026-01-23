@@ -11,7 +11,7 @@ const THEMES: ThemeDescriptionI[] = [
   {
     name: "Eleven Monokai",
     type: "dark",
-    file: path.join(THEMES_DIRECTORY, "Two Monokai-color-theme.json"),
+    file: path.join(THEMES_DIRECTORY, "Two Monokai (Dark).json"),
   },
 ]
 
