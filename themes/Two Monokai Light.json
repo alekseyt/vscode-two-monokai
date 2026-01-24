@@ -3,9 +3,6 @@
   "type": "light",
   "semanticHighlighting": true,
   "colors": {
-    "editor.lineHighlightBackground": "#4444440a",
-    "editorLineNumber.foreground": "#9e9e9e",
-    "editorLineNumber.activeForeground": "#0a70ff",
     "activityBar.background": "#d8d8d8",
     "activityBar.border": "#d8d8d8",
     "activityBar.activeBorder": "#d8d8d8",
@@ -20,6 +17,9 @@
     "titleBar.activeBackground": "#d8d8d8",
     "editor.foreground": "#1c1514",
     "editor.background": "#ffffff",
+    "editor.lineHighlightBackground": "#4444440a",
+    "editorLineNumber.foreground": "#9e9e9e",
+    "editorLineNumber.activeForeground": "#0a70ff",
     "editorBracketMatch.border": "#616161"
   },
   "tokenColors": [

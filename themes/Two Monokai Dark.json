@@ -3,9 +3,6 @@
   "type": "dark",
   "semanticHighlighting": true,
   "colors": {
-    "editor.lineHighlightBackground": "#4444447f",
-    "editorLineNumber.activeForeground": "#78dce8",
-    "editorCursor.foreground": "#61afef",
     "statusBar.background": "#333333",
     "statusBar.debuggingBackground": "#333333",
     "statusBar.noFolderBackground": "#333333",
@@ -16,6 +13,9 @@
     "titleBar.activeBackground": "#333333",
     "editor.foreground": "#fcfcfa",
     "editor.background": "#1e1e1e",
+    "editor.lineHighlightBackground": "#4444447f",
+    "editorLineNumber.activeForeground": "#78dce8",
+    "editorCursor.foreground": "#61afef",
     "editorGroupHeader.tabsBackground": "#282828",
     "editorBracketMatch.border": "#cccccc",
     "terminal.ansiWhite": "#ffffff"

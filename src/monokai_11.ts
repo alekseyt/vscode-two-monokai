@@ -102,9 +102,6 @@ function makeCommon(settings: ThemeSettingsI) {
 function makeDark(tokenColors: TokenColorI[]) {
   return {
     colors: {
-      "editor.lineHighlightBackground": "#4444447f",
-      "editorLineNumber.activeForeground": MONOKAIPRO.dark.cyan,
-      "editorCursor.foreground": ONEDARK.blue,
       "statusBar.background": "#333333", // match sidebar (activity bar)
       "statusBar.debuggingBackground": "#333333",
       "statusBar.noFolderBackground": "#333333",
@@ -115,6 +112,9 @@ function makeDark(tokenColors: TokenColorI[]) {
       "titleBar.activeBackground": "#333333",
       "editor.foreground": MONOKAIPRO.dark.white,
       "editor.background": "#1e1e1e", // derived from Default Dark
+      "editor.lineHighlightBackground": "#4444447f",
+      "editorLineNumber.activeForeground": MONOKAIPRO.dark.cyan,
+      "editorCursor.foreground": ONEDARK.blue,
       "editorGroupHeader.tabsBackground": "#282828", // massively derived from Monokai Dimmed
       "editorBracketMatch.border": "#cccccc", // brackets match color is actually coming from default text color in file explorer and it is pure gray
       "terminal.ansiWhite": "#ffffff", // don't remember why
@@ -126,9 +126,6 @@ function makeDark(tokenColors: TokenColorI[]) {
 function makeLight(tokenColors: TokenColorI[]) {
   return {
     colors: {
-      "editor.lineHighlightBackground": "#4444440a",
-      "editorLineNumber.foreground": CMYK.gray,
-      "editorLineNumber.activeForeground": CMYK.denimblue,
       "activityBar.background": "#d8d8d8", // tad darker than default section header (#dcdcdc)
       "activityBar.border": "#d8d8d8",
       "activityBar.activeBorder": "#d8d8d8",
@@ -143,6 +140,9 @@ function makeLight(tokenColors: TokenColorI[]) {
       "titleBar.activeBackground": "#d8d8d8", // match sidebar (activity bar)
       "editor.foreground": MONOKAIPRO.light.black,
       "editor.background": "#ffffff", // derived from default light
+      "editor.lineHighlightBackground": "#4444440a",
+      "editorLineNumber.foreground": CMYK.gray,
+      "editorLineNumber.activeForeground": CMYK.denimblue,
       "editorBracketMatch.border": "#616161", // this matches default text color in file explorer
     },
     tokenColors: tokenColors,
