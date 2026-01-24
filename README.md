@@ -18,14 +18,13 @@ and Monokai (and a little bit of One Dark, it's complicated).
 
 Editor colors derived from [Monokai Pro][]:
 
-- Black: <span style="color:#2c292d">#2c292d</span>
 - White: <span style="color:#fcfcfa">#fcfcfa</span>
 - Red: <span style="color:#ff6188">#ff6188</span>
-- Green: <span style="color:#a9dc76">#a9dc76</span>
-- Yellow: <span style="color:#ffd866">#ffd866</span>
 - Orange: <span style="color:#fc9867">#fc9867</span>
-- Magenta: <span style="color:#ab9df2">#ab9df2</span>
+- Yellow: <span style="color:#ffd866">#ffd866</span>
+- Green: <span style="color:#a9dc76">#a9dc76</span>
 - Cyan: <span style="color:#78dce8">#78dce8</span>
+- Magenta: <span style="color:#ab9df2">#ab9df2</span>
 
 [Monokai Pro]: https://monokai.pro
 
@@ -40,11 +39,21 @@ Derived from Monokai Dimmed:
 - Comments color: <span style="color:#9a9b99">#9a9b99</span>
 - Some other UI colors too (status bar, etc)
 
-Derived from [Default Light][] (Light theme):
+Derived from [Default Light][] (light theme):
 
 - Magenta: <span style="color:#ab9df2">#af00db</span>
 
 [Default Light]: https://github.com/microsoft/vscode/blob/main/extensions/theme-defaults/themes/light_plus.json
+
+Derived from Monokai Pro (light):
+
+- Black: <span style="color:#1c1514">#1c1514</span>
+- Red: <span style="color:#e14775">#e14775</span>
+- Orange: <span style="color:#e16032">#e16032</span>
+- Yellow: <span style="color:#cc7a0a">#cc7a0a</span>
+- Green: <span style="color:#269d69">#269d69</span>
+- Cyan: <span style="color:#1c8ca8">#1c8ca8</span>
+- Magenta: <span style="color:#7058be">#7058be</span>
 
 There are also some CMYK colors were used (light themes are hard).
 
