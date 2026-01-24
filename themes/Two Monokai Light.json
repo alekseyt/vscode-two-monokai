@@ -279,7 +279,8 @@
       "scope": [
         "markup.inline.raw",
         "markup.raw",
-        "markup.fenced_code.block"
+        "markup.fenced_code.block",
+        "markup.table"
       ],
       "settings": {
         "foreground": "#ab9df2"
