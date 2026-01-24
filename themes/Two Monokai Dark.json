@@ -117,7 +117,7 @@
       }
     },
     {
-      "name": "Number, Constant, Tag Attribute, Embedded",
+      "name": "Number, Constant, Embedded",
       "scope": [
         "constant.numeric",
         "support.constant",
@@ -183,7 +183,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#ab9df2"
+        "foreground": "#78dce8"
       }
     },
     {
@@ -279,7 +279,7 @@
         "constant.other.reference.link.markdown"
       ],
       "settings": {
-        "foreground": "#ff6188"
+        "foreground": "#a9dc76"
       }
     },
     {

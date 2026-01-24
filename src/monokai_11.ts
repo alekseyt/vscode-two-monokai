@@ -31,8 +31,7 @@ const semantics = {
 
     markup: {
       list: MONOKAIPRO.dark.green,
-      heading: MONOKAIPRO.dark.red,
-      headingText: MONOKAIPRO.dark.yellow, // Same as strings
+      heading: MONOKAIPRO.dark.yellow, // Same as strings
       inline: MONOKAIPRO.dark.magenta, // Same as constants
       link: ONEDARK.blue, // Same as members
     },
@@ -51,8 +50,7 @@ const semantics = {
 
     markup: {
       list: MONOKAIPRO.light.green,
-      heading: MONOKAIPRO.light.red,
-      headingText: MONOKAIPRO.light.yellow,
+      heading: MONOKAIPRO.light.yellow,
       inline: MONOKAIPRO.dark.magenta,
       link: CMYK.denimblue,
     },
@@ -62,7 +60,7 @@ const semantics = {
 type SemanticsT = typeof semantics.dark
 
 function validateSemantics(semantics: SemanticsT) {
-  if (semantics.markup.headingText !== semantics.strings) {
+  if (semantics.markup.heading !== semantics.strings) {
     throw new Error("semantics.markup.headingText !== semantics.strings")
   }
   if (semantics.markup.inline !== semantics.constants) {
@@ -182,7 +180,7 @@ function makeTokenColors(semantics: SemanticsT) {
       },
     },
     {
-      name: "Number, Constant, Tag Attribute, Embedded",
+      name: "Number, Constant, Embedded",
       scope: scopes.CONSTANTS,
       settings: {
         foreground: semantics.constants,
@@ -220,7 +218,7 @@ function makeTokenColors(semantics: SemanticsT) {
       name: "Attributes", // tag attributes (per Solarized Dark)
       scope: scopes.ATTRIBUTES,
       settings: {
-        foreground: semantics.constants,
+        foreground: semantics.types,
       },
     },
     {
@@ -292,14 +290,14 @@ function makeTokenColors(semantics: SemanticsT) {
       name: "Markup Headings", // not actually headings, just ## marks
       scope: scopes.MARKUP_HEADINGS,
       settings: {
-        foreground: semantics.markup.heading,
+        foreground: semantics.markup.list,
       },
     },
     {
       name: "Markup Heading Text",
       scope: scopes.MARKUP_HEADINGTEXT,
       settings: {
-        foreground: semantics.markup.headingText,
+        foreground: semantics.markup.heading,
       },
     },
     {
