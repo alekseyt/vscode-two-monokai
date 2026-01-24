@@ -8,10 +8,6 @@ export const CMYK = {
   black: "#000000",
   white: "#ffffff",
 
-  grey: "#616161",
   gray: "#9e9e9e",
-  paynegrey: "#666f78",
-  grayiron: "#808080",
-
   denimblue: "#0a70ff",
 }
