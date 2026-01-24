@@ -8,6 +8,7 @@
     "activityBar.activeBorder": "#d8d8d8",
     "activityBar.foreground": "#1f1f1f",
     "activityBar.inactiveForeground": "#616161",
+    "sideBarSectionHeader.background": "#d8d8d8",
     "statusBar.background": "#d8d8d8",
     "statusBar.debuggingBackground": "#d8d8d8",
     "statusBar.noFolderBackground": "#d8d8d8",

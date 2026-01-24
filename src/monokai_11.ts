@@ -108,6 +108,7 @@ function makeDark(tokenColors: TokenColorI[]) {
       "statusBar.foreground": "#adadad", // match sidebar icons color
       "statusBarItem.remoteBackground": "#333333", // for WSL segment
       "statusBarItem.remoteForeground": "#adadad",
+      "sideBarSectionHeader.background": "#333333", // match activity bar
       "tab.inactiveForeground": "#bbbbbb", // not too gray for better readability, default was #969696
       "titleBar.activeBackground": "#333333",
       "editor.foreground": MONOKAIPRO.dark.white,
@@ -131,6 +132,7 @@ function makeLight(tokenColors: TokenColorI[]) {
       "activityBar.activeBorder": "#d8d8d8",
       "activityBar.foreground": DEFAULTLIGHT.darkgray,
       "activityBar.inactiveForeground": DEFAULTLIGHT.gray,
+      "sideBarSectionHeader.background": "#d8d8d8", // match activity bar
       "statusBar.background": "#d8d8d8", // match sidebar (activity bar)
       "statusBar.debuggingBackground": "#d8d8d8",
       "statusBar.noFolderBackground": "#d8d8d8",

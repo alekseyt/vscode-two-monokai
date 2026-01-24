@@ -9,6 +9,7 @@
     "statusBar.foreground": "#adadad",
     "statusBarItem.remoteBackground": "#333333",
     "statusBarItem.remoteForeground": "#adadad",
+    "sideBarSectionHeader.background": "#333333",
     "tab.inactiveForeground": "#bbbbbb",
     "titleBar.activeBackground": "#333333",
     "editor.foreground": "#fcfcfa",
