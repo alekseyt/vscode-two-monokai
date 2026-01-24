@@ -10,4 +10,5 @@ export const CMYK = {
 
   gray: "#9e9e9e",
   denimblue: "#0a70ff",
+  caeruleum: "#26c5ed",
 }

@@ -40,7 +40,7 @@ const SEMANTICS = {
   light: {
     unmarked: CMYK.black,
     keywords: MONOKAIPRO.light.red,
-    types: ONEDARK.blue,
+    types: CMYK.caeruleum,
     constants: MONOKAIPRO.dark.magenta,
     strings: MONOKAIPRO.light.yellow,
     functions: MONOKAIPRO.light.green,

@@ -48,7 +48,7 @@
         "support.class"
       ],
       "settings": {
-        "foreground": "#61afef"
+        "foreground": "#26c5ed"
       }
     },
     {
@@ -166,7 +166,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#61afef"
+        "foreground": "#26c5ed"
       }
     },
     {
@@ -184,7 +184,7 @@
         "constant.character.escape"
       ],
       "settings": {
-        "foreground": "#61afef"
+        "foreground": "#26c5ed"
       }
     },
     {
@@ -194,7 +194,7 @@
         "tag.decorator.js punctuation.definition.tag.js"
       ],
       "settings": {
-        "foreground": "#61afef"
+        "foreground": "#26c5ed"
       }
     },
     {
