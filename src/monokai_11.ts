@@ -33,9 +33,9 @@ const semantics = {
       list: MONOKAIPRO.dark.green,
       styling: MONOKAIPRO.dark.red,
       heading: MONOKAIPRO.dark.red,
-      headingText: MONOKAIPRO.dark.yellow,
-      inline: MONOKAIPRO.dark.cyan,
-      link: ONEDARK.blue,
+      headingText: MONOKAIPRO.dark.yellow, // Same as strings
+      inline: MONOKAIPRO.dark.magenta, // Same as constants
+      link: ONEDARK.blue, // Same as members
     },
   },
 
@@ -55,13 +55,25 @@ const semantics = {
       styling: MONOKAIPRO.light.red,
       heading: MONOKAIPRO.light.red,
       headingText: MONOKAIPRO.light.yellow,
-      inline: MONOKAIPRO.dark.cyan,
+      inline: MONOKAIPRO.dark.magenta,
       link: CMYK.denimblue,
     },
   },
 }
 
 type SemanticsT = typeof semantics.dark
+
+function validateSemantics(semantics: SemanticsT) {
+  if (semantics.markup.headingText !== semantics.strings) {
+    throw new Error("semantics.markup.headingText !== semantics.strings")
+  }
+  if (semantics.markup.inline !== semantics.constants) {
+    throw new Error("semantics.markup.inline !== semantics.constants")
+  }
+  if (semantics.markup.link !== semantics.members) {
+    throw new Error("semantics.markup.link !== semantics.members")
+  }
+}
 
 // https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-coloring-in-color-themes
 
@@ -116,6 +128,8 @@ function makeLight(semantics: SemanticsT) {
 }
 
 function makeTokenColors(semantics: SemanticsT) {
+  validateSemantics(semantics)
+
   return [
     {
       // also place for disabling unwanted highlighting

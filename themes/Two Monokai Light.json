@@ -220,9 +220,8 @@
     {
       "name": "Markup Quote, Lists",
       "scope": [
-        "markup.quote",
-        "markup.list",
-        "markup.other"
+        "punctuation.definition.list",
+        "punctuation.definition.quote"
       ],
       "settings": {
         "foreground": "#269d69"
@@ -232,7 +231,8 @@
       "name": "Markup Styling",
       "scope": [
         "markup.bold",
-        "markup.italic"
+        "markup.italic",
+        "markup.strikethrough"
       ],
       "settings": {
         "foreground": "#e14775"
@@ -262,10 +262,11 @@
       "name": "Markup Inline",
       "scope": [
         "markup.inline.raw",
-        "markup.raw"
+        "markup.raw",
+        "markup.fenced_code.block"
       ],
       "settings": {
-        "foreground": "#78dce8"
+        "foreground": "#ab9df2"
       }
     },
     {

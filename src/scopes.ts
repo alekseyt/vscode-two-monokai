@@ -109,6 +109,6 @@ export const MARKUP_HEADINGS = [
 
 export const MARKUP_HEADINGTEXT = ["markup.heading entity.name"]
 
-export const MARKUP_INLINE = ["markup.inline.raw", "markup.raw"]
+export const MARKUP_INLINE = ["markup.inline.raw", "markup.raw", "markup.fenced_code.block"]
 
 export const MARKUP_LINK = ["markup.underline.link.markdown"]
