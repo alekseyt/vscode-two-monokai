@@ -1,4 +1,5 @@
 import { CMYK } from "./cmyk.ts"
+import { DEFAULTLIGHT } from "./defaultlight.ts"
 import { MONOKAIDIMMED } from "./monokaidimmed.ts"
 import { MONOKAIPRO } from "./monokaipro.ts"
 import { ONEDARK } from "./onedark.ts"
@@ -41,7 +42,7 @@ const SEMANTICS = {
     unmarked: CMYK.black,
     keywords: MONOKAIPRO.light.red,
     types: CMYK.caeruleum,
-    constants: MONOKAIPRO.dark.magenta,
+    constants: DEFAULTLIGHT.magenta,
     strings: MONOKAIPRO.light.yellow,
     functions: MONOKAIPRO.light.green,
     arguments: MONOKAIPRO.dark.orange,
@@ -51,7 +52,7 @@ const SEMANTICS = {
     markup: {
       list: MONOKAIPRO.light.green,
       heading: MONOKAIPRO.light.yellow,
-      inline: MONOKAIPRO.dark.magenta,
+      inline: DEFAULTLIGHT.magenta,
       link: CMYK.denimblue,
     },
   },

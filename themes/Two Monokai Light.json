@@ -112,7 +112,7 @@
         "string constant.other.placeholder"
       ],
       "settings": {
-        "foreground": "#ab9df2"
+        "foreground": "#af00db"
       }
     },
     {
@@ -175,7 +175,7 @@
         "string.regexp"
       ],
       "settings": {
-        "foreground": "#ab9df2"
+        "foreground": "#af00db"
       }
     },
     {
@@ -283,7 +283,7 @@
         "markup.table"
       ],
       "settings": {
-        "foreground": "#ab9df2"
+        "foreground": "#af00db"
       }
     },
     {
