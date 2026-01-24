@@ -17,8 +17,8 @@
     "editor.foreground": "#fcfcfa",
     "editor.background": "#1e1e1e",
     "editorGroupHeader.tabsBackground": "#282828",
-    "terminal.ansiWhite": "#ffffff",
-    "editorBracketMatch.border": "#cccccc"
+    "editorBracketMatch.border": "#cccccc",
+    "terminal.ansiWhite": "#ffffff"
   },
   "tokenColors": [
     {

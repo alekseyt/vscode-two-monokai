@@ -101,16 +101,11 @@ function makeDark(semantics: SemanticsT) {
       "statusBarItem.remoteForeground": "#adadad",
       "tab.inactiveForeground": "#bbbbbb", // not too gray for better readability, default was #969696
       "titleBar.activeBackground": "#333333",
-      // derived from Monokai
-      // this is actually from Monokai, not from Default Dark or Monokai Dimmed
       "editor.foreground": MONOKAIPRO.dark.white,
-      // derived from Default Dark
-      "editor.background": "#1e1e1e",
-      // massively derived from Monokai Dimmed
-      "editorGroupHeader.tabsBackground": "#282828",
-      "terminal.ansiWhite": "#ffffff",
-      // brackets match color is actually coming from default text color in file explorer and it is pure gray
-      "editorBracketMatch.border": "#cccccc",
+      "editor.background": "#1e1e1e", // derived from Default Dark
+      "editorGroupHeader.tabsBackground": "#282828", // massively derived from Monokai Dimmed
+      "editorBracketMatch.border": "#cccccc", // brackets match color is actually coming from default text color in file explorer and it is pure gray
+      "terminal.ansiWhite": "#ffffff", // don't remember why
     },
     tokenColors: makeTokenColors(semantics),
   }
