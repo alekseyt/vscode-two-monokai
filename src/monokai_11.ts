@@ -1,5 +1,6 @@
 import { CMYK } from "./cmyk.ts"
 import { DEFAULTLIGHT } from "./defaultlight.ts"
+import { LHD } from "./legithackdesign.ts"
 import { MONOKAIDIMMED } from "./monokaidimmed.ts"
 import { MONOKAIPRO } from "./monokaipro.ts"
 import { ONEDARK } from "./onedark.ts"
@@ -55,7 +56,7 @@ const SEMANTICS = {
     strings: MONOKAIPRO.light.yellow,
     functions: MONOKAIPRO.light.green,
     arguments: MONOKAIPRO.dark.orange,
-    members: CMYK.denimblue,
+    members: LHD.light.membersblue,
     comments: CMYK.gray,
     link: CMYK.denimblue,
 
