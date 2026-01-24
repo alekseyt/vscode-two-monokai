@@ -244,13 +244,6 @@ function makeTokenColors(semantics: SemanticsT) {
       },
     },
     {
-      name: "ES7 Bind Operator",
-      scope: scopes.ES7BINDOP,
-      settings: {
-        foreground: semantics.keywords,
-      },
-    },
-    {
       name: "URL",
       scope: scopes.URL,
       settings: {

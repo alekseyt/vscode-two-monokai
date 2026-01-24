@@ -93,8 +93,6 @@ export const ATTRIBUTES = ["entity.other.attribute-name"]
 
 export const DECORATORS = ["tag.decorator.js entity.name.tag.js", "tag.decorator.js punctuation.definition.tag.js"]
 
-export const ES7BINDOP = ["source.js constant.other.object.key.js string.unquoted.label.js"]
-
 export const URL = ["*url*", "*link*", "*uri*"]
 
 export const MARKUP_LIST = ["punctuation.definition.list", "punctuation.definition.quote"]

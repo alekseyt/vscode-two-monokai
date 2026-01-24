@@ -198,15 +198,6 @@
       }
     },
     {
-      "name": "ES7 Bind Operator",
-      "scope": [
-        "source.js constant.other.object.key.js string.unquoted.label.js"
-      ],
-      "settings": {
-        "foreground": "#e14775"
-      }
-    },
-    {
       "name": "URL",
       "scope": [
         "*url*",

@@ -215,15 +215,6 @@
       }
     },
     {
-      "name": "ES7 Bind Operator",
-      "scope": [
-        "source.js constant.other.object.key.js string.unquoted.label.js"
-      ],
-      "settings": {
-        "foreground": "#ff6188"
-      }
-    },
-    {
       "name": "URL",
       "scope": [
         "*url*",
