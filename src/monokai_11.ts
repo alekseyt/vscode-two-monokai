@@ -93,7 +93,7 @@ function makeDark(semantics: SemanticsT) {
       "editor.lineHighlightBackground": "#4444447f",
       "editorLineNumber.activeForeground": MONOKAIPRO.dark.cyan,
       "editorCursor.foreground": ONEDARK.blue,
-      "statusBar.background": "#333333", // match sidebar
+      "statusBar.background": "#333333", // match sidebar (activity bar)
       "statusBar.debuggingBackground": "#333333",
       "statusBar.noFolderBackground": "#333333",
       "statusBar.foreground": "#adadad", // match sidebar icons color
@@ -120,9 +120,21 @@ function makeDark(semantics: SemanticsT) {
 function makeLight(semantics: SemanticsT) {
   return {
     colors: {
-      "editor.lineHighlightBackground": "#4444440c",
+      "editor.lineHighlightBackground": "#4444440a",
       "editorLineNumber.foreground": CMYK.gray,
       "editorLineNumber.activeForeground": CMYK.denimblue,
+      "activityBar.background": "#d8d8d8", // Tad darker than default section header (#dcdcdc)
+      "activityBar.border": "#d8d8d8",
+      "activityBar.activeBorder": "#d8d8d8",
+      "activityBar.foreground": DEFAULTLIGHT.darkgray,
+      "activityBar.inactiveForeground": DEFAULTLIGHT.gray,
+      "titleBar.activeBackground": "#d8d8d8", // Match sidebar (activity bar)
+      "statusBar.background": "#d8d8d8", // match sidebar (activity bar)
+      "statusBar.debuggingBackground": "#d8d8d8",
+      "statusBar.noFolderBackground": "#d8d8d8",
+      "statusBar.foreground": DEFAULTLIGHT.darkgray, // match sidebar icons color
+      "statusBarItem.remoteBackground": "#d8d8d8", // for WSL segment
+      "statusBarItem.remoteForeground": DEFAULTLIGHT.darkgray,
     },
     tokenColors: makeTokenColors(semantics),
   }

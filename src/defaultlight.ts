@@ -1,3 +1,6 @@
 export const DEFAULTLIGHT = {
-    magenta: "#af00db",
+  // This is actually from modern default light
+  magenta: "#af00db",
+  darkgray: "#1f1f1f",
+  gray: "#616161",
 }

@@ -3,9 +3,21 @@
   "type": "light",
   "semanticHighlighting": true,
   "colors": {
-    "editor.lineHighlightBackground": "#4444440c",
+    "editor.lineHighlightBackground": "#4444440a",
     "editorLineNumber.foreground": "#9e9e9e",
-    "editorLineNumber.activeForeground": "#0a70ff"
+    "editorLineNumber.activeForeground": "#0a70ff",
+    "activityBar.background": "#d8d8d8",
+    "activityBar.border": "#d8d8d8",
+    "activityBar.activeBorder": "#d8d8d8",
+    "activityBar.foreground": "#1f1f1f",
+    "activityBar.inactiveForeground": "#616161",
+    "titleBar.activeBackground": "#d8d8d8",
+    "statusBar.background": "#d8d8d8",
+    "statusBar.debuggingBackground": "#d8d8d8",
+    "statusBar.noFolderBackground": "#d8d8d8",
+    "statusBar.foreground": "#1f1f1f",
+    "statusBarItem.remoteBackground": "#d8d8d8",
+    "statusBarItem.remoteForeground": "#1f1f1f"
   },
   "tokenColors": [
     {
