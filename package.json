@@ -25,12 +25,12 @@
       {
         "label": "%darkThemeLabel%",
         "uiTheme": "vs-dark",
-        "path": "./themes/Two Monokai (Dark).json"
+        "path": "./themes/Two Monokai Dark.json"
       },
       {
         "label": "%lightThemeLabel%",
         "uiTheme": "vs",
-        "path": "./themes/Two Monokai (Light).json"
+        "path": "./themes/Two Monokai Light.json"
       }
     ]
   },
