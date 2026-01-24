@@ -17,9 +17,7 @@ interface TokenColorI {
 }
 
 export function makeThemeObject(settings: ThemeSettingsI) {
-  const semantics = settings.type === "dark" ? SEMANTICS.dark : SEMANTICS.light
-  validateSemantics(semantics)
-
+  const semantics = validateSemantics(settings.type === "dark" ? SEMANTICS.dark : SEMANTICS.light)
   const tokenColors = makeTokenColors(semantics)
   const themeObj = settings.type === "dark" ? makeDark(tokenColors) : makeLight(tokenColors)
   const commonObj = makeCommon(settings)
@@ -70,7 +68,7 @@ const SEMANTICS = {
 
 type SemanticsT = typeof SEMANTICS.dark
 
-function validateSemantics(semantics: SemanticsT) {
+function validateSemantics(semantics: SemanticsT): SemanticsT {
   if (semantics.markup.heading !== semantics.strings) {
     throw new Error("semantics.markup.heading !== semantics.strings")
   }
@@ -80,6 +78,8 @@ function validateSemantics(semantics: SemanticsT) {
   if (semantics.markup.link !== semantics.members) {
     throw new Error("semantics.markup.link !== semantics.members")
   }
+
+  return semantics
 }
 
 // https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-coloring-in-color-themes
