@@ -7,6 +7,8 @@ Clean, clear, dark, color-coded theme without bullshit:
 - Good contrast
 - ~~Bugs fixed, PRs merged, etc~~
 
+Light theme was also added to complement dark theme on bright days.
+
 Focuses mostly (but not entirely) on editor colors, the rest are defaults
 (default dark or something). Inspired by [One Monokai][] theme, but instead
 of blending One Dark and Monokai, it blends Default Dark, Monokai Dimmed
@@ -37,6 +39,17 @@ Derived from Monokai Dimmed:
 
 - Comments color: <span style="color:#9a9b99">#9a9b99</span>
 - Some other UI colors too (status bar, etc)
+
+Derived from [Default Light][] (Light theme):
+
+- Magenta: <span style="color:#ab9df2">#af00db</span>
+
+[Default Light]: https://github.com/microsoft/vscode/blob/main/extensions/theme-defaults/themes/light_plus.json
+
+There are also some CMYK colors were used (light themes are hard).
+
+- CMYK [color codes](https://www.toutes-les-couleurs.com/en/CMYK-color-code.php)
+- CMYK to RGB [converter](https://www.rapidtables.com/convert/color/cmyk-to-rgb.html)
 
 Tested on C++, Lua, Typescript. Markdown will also get some love
 (not too much). Shell seems to work fine too, as well as GLSL, but
