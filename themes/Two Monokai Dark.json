@@ -245,14 +245,30 @@
       }
     },
     {
-      "name": "Markup Styling",
+      "name": "Markup Bold",
       "scope": [
-        "markup.bold",
-        "markup.italic",
+        "markup.bold"
+      ],
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markup Italic",
+      "scope": [
+        "markup.italic"
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markup Strikethrough",
+      "scope": [
         "markup.strikethrough"
       ],
       "settings": {
-        "foreground": "#ff6188"
+        "fontStyle": "strikethrough"
       }
     },
     {

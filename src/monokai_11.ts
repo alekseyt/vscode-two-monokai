@@ -31,7 +31,6 @@ const semantics = {
 
     markup: {
       list: MONOKAIPRO.dark.green,
-      styling: MONOKAIPRO.dark.red,
       heading: MONOKAIPRO.dark.red,
       headingText: MONOKAIPRO.dark.yellow, // Same as strings
       inline: MONOKAIPRO.dark.magenta, // Same as constants
@@ -52,7 +51,6 @@ const semantics = {
 
     markup: {
       list: MONOKAIPRO.light.green,
-      styling: MONOKAIPRO.light.red,
       heading: MONOKAIPRO.light.red,
       headingText: MONOKAIPRO.light.yellow,
       inline: MONOKAIPRO.dark.magenta,
@@ -270,10 +268,24 @@ function makeTokenColors(semantics: SemanticsT) {
       },
     },
     {
-      name: "Markup Styling",
-      scope: scopes.MARKUP_STYLING,
+      name: "Markup Bold",
+      scope: scopes.MARKUP_BOLD,
       settings: {
-        foreground: semantics.markup.styling,
+        fontStyle: "bold",
+      },
+    },
+    {
+      name: "Markup Italic",
+      scope: scopes.MARKUP_ITALIC,
+      settings: {
+        fontStyle: "italic",
+      },
+    },
+    {
+      name: "Markup Strikethrough",
+      scope: scopes.MARKUP_STRIKETHROUGH,
+      settings: {
+        fontStyle: "strikethrough",
       },
     },
     {

@@ -99,7 +99,11 @@ export const URL = ["*url*", "*link*", "*uri*"]
 
 export const MARKUP_LIST = ["punctuation.definition.list", "punctuation.definition.quote"]
 
-export const MARKUP_STYLING = ["markup.bold", "markup.italic", "markup.strikethrough"]
+export const MARKUP_BOLD = ["markup.bold"]
+
+export const MARKUP_ITALIC = ["markup.italic"]
+
+export const MARKUP_STRIKETHROUGH = ["markup.strikethrough"]
 
 export const MARKUP_HEADINGS = [
   "markup.heading",
