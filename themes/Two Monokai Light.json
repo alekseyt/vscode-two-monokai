@@ -13,7 +13,7 @@
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#1c1514"
+        "foreground": "#000000"
       }
     },
     {
@@ -48,7 +48,7 @@
         "support.class"
       ],
       "settings": {
-        "foreground": "#1c8ca8"
+        "foreground": "#61afef"
       }
     },
     {
@@ -63,7 +63,7 @@
         "support.variable.glsl"
       ],
       "settings": {
-        "foreground": "#61afef"
+        "foreground": "#0a70ff"
       }
     },
     {
@@ -73,7 +73,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "#9a9b99"
+        "foreground": "#9e9e9e"
       }
     },
     {
@@ -96,7 +96,7 @@
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#e16032"
+        "foreground": "#fc9867"
       }
     },
     {
@@ -112,7 +112,7 @@
         "string constant.other.placeholder"
       ],
       "settings": {
-        "foreground": "#7058be"
+        "foreground": "#ab9df2"
       }
     },
     {
@@ -166,7 +166,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#7058be"
+        "foreground": "#ab9df2"
       }
     },
     {
@@ -175,7 +175,7 @@
         "string.regexp"
       ],
       "settings": {
-        "foreground": "#7058be"
+        "foreground": "#ab9df2"
       }
     },
     {
@@ -184,7 +184,7 @@
         "constant.character.escape"
       ],
       "settings": {
-        "foreground": "#1c8ca8"
+        "foreground": "#61afef"
       }
     },
     {
@@ -194,7 +194,7 @@
         "tag.decorator.js punctuation.definition.tag.js"
       ],
       "settings": {
-        "foreground": "#1c8ca8"
+        "foreground": "#61afef"
       }
     },
     {
@@ -225,7 +225,7 @@
         "markup.other"
       ],
       "settings": {
-        "foreground": "#a9dc76"
+        "foreground": "#269d69"
       }
     },
     {
@@ -235,7 +235,7 @@
         "markup.italic"
       ],
       "settings": {
-        "foreground": "#ff6188"
+        "foreground": "#e14775"
       }
     },
     {
@@ -246,7 +246,7 @@
         "constant.other.reference.link.markdown"
       ],
       "settings": {
-        "foreground": "#ff6188"
+        "foreground": "#e14775"
       }
     },
     {
@@ -255,7 +255,7 @@
         "markup.heading entity.name"
       ],
       "settings": {
-        "foreground": "#ffd866"
+        "foreground": "#cc7a0a"
       }
     },
     {
@@ -274,7 +274,7 @@
         "markup.underline.link.markdown"
       ],
       "settings": {
-        "foreground": "#61afef"
+        "foreground": "#0a70ff"
       }
     }
   ]

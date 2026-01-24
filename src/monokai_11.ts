@@ -1,3 +1,7 @@
+import { CMYK } from "./cmyk.ts"
+import { MONOKAIDIMMED } from "./monokaidimmed.ts"
+import { MONOKAIPRO } from "./monokaipro.ts"
+import { ONEDARK } from "./onedark.ts"
 import * as scopes from "./scopes.ts"
 
 export interface ThemeSettingsI {
@@ -13,74 +17,46 @@ export function makeThemeObject(settings: ThemeSettingsI) {
   return finalObj
 }
 
-const monokaipro = {
-  dark: {
-    white: "#fcfcfa",
-    red: "#ff6188",
-    orange: "#fc9867",
-    yellow: "#ffd866",
-    green: "#a9dc76",
-    cyan: "#78dce8",
-    magenta: "#ab9df2",
-  },
-  light: {
-    black: "#1c1514",
-    red: "#e14775",
-    orange: "#e16032",
-    yellow: "#cc7a0a",
-    green: "#269d69",
-    cyan: "#1c8ca8",
-    magenta: "#7058be",
-  },
-}
-
-const onedark = {
-  blue: "#61afef",
-}
-
-const monokaidimmed = {
-  comments: "#9a9b99",
-}
-
 const semantics = {
   dark: {
-    unmarked: monokaipro.dark.white,
-    keywords: monokaipro.dark.red,
-    types: monokaipro.dark.cyan,
-    constants: monokaipro.dark.magenta,
-    strings: monokaipro.dark.yellow,
-    functions: monokaipro.dark.green,
-    arguments: monokaipro.dark.orange,
-    members: onedark.blue,
-    comments: monokaidimmed.comments,
+    unmarked: MONOKAIPRO.dark.white,
+    keywords: MONOKAIPRO.dark.red,
+    types: MONOKAIPRO.dark.cyan,
+    constants: MONOKAIPRO.dark.magenta,
+    strings: MONOKAIPRO.dark.yellow,
+    functions: MONOKAIPRO.dark.green,
+    arguments: MONOKAIPRO.dark.orange,
+    members: ONEDARK.blue,
+    comments: MONOKAIDIMMED.comments,
 
     markup: {
-      list: monokaipro.dark.green,
-      styling: monokaipro.dark.red,
-      heading: monokaipro.dark.red,
-      headingText: monokaipro.dark.yellow,
-      inline: monokaipro.dark.cyan,
-      link: onedark.blue,
+      list: MONOKAIPRO.dark.green,
+      styling: MONOKAIPRO.dark.red,
+      heading: MONOKAIPRO.dark.red,
+      headingText: MONOKAIPRO.dark.yellow,
+      inline: MONOKAIPRO.dark.cyan,
+      link: ONEDARK.blue,
     },
   },
+
   light: {
-    unmarked: monokaipro.light.black,
-    keywords: monokaipro.light.red,
-    types: monokaipro.light.cyan,
-    constants: monokaipro.light.magenta,
-    strings: monokaipro.light.yellow,
-    functions: monokaipro.light.green,
-    arguments: monokaipro.light.orange,
-    members: onedark.blue, // TODO
-    comments: monokaidimmed.comments, // TODO
+    unmarked: CMYK.black,
+    keywords: MONOKAIPRO.light.red,
+    types: ONEDARK.blue,
+    constants: MONOKAIPRO.dark.magenta,
+    strings: MONOKAIPRO.light.yellow,
+    functions: MONOKAIPRO.light.green,
+    arguments: MONOKAIPRO.dark.orange,
+    members: CMYK.denimblue,
+    comments: CMYK.gray,
 
     markup: {
-      list: monokaipro.dark.green,
-      styling: monokaipro.dark.red,
-      heading: monokaipro.dark.red,
-      headingText: monokaipro.dark.yellow,
-      inline: monokaipro.dark.cyan,
-      link: onedark.blue,
+      list: MONOKAIPRO.light.green,
+      styling: MONOKAIPRO.light.red,
+      heading: MONOKAIPRO.light.red,
+      headingText: MONOKAIPRO.light.yellow,
+      inline: MONOKAIPRO.dark.cyan,
+      link: CMYK.denimblue,
     },
   },
 }
@@ -106,8 +82,8 @@ function makeDark(semantics: SemanticsT) {
   return {
     colors: {
       "editor.lineHighlightBackground": "#4444447f",
-      "editorLineNumber.activeForeground": monokaipro.dark.cyan,
-      "editorCursor.foreground": onedark.blue,
+      "editorLineNumber.activeForeground": MONOKAIPRO.dark.cyan,
+      "editorCursor.foreground": ONEDARK.blue,
       "statusBar.background": "#333333", // match sidebar
       "statusBar.debuggingBackground": "#333333",
       "statusBar.noFolderBackground": "#333333",
@@ -119,7 +95,7 @@ function makeDark(semantics: SemanticsT) {
       // derived from Monokai
       // this is actually from Monokai, not from Default Dark or Monokai Dimmed
       // not sure about "fa" part, looks inconsistent, but this is what was picked from screenshot
-      "editor.foreground": monokaipro.dark.white,
+      "editor.foreground": MONOKAIPRO.dark.white,
       // derived from Default Dark
       "editor.background": "#1e1e1e",
       // massively derived from Monokai Dimmed
