@@ -6,6 +6,7 @@ interface ThemeDescriptionI extends ThemeSettingsI {
   file: string
 }
 
+const JSON_SPACING: number | undefined = 2
 const THEMES_DIRECTORY = "./themes"
 const THEMES: ThemeDescriptionI[] = [
   {
@@ -26,5 +27,5 @@ await fs.mkdir(THEMES_DIRECTORY, {
 
 for (const theme of THEMES) {
   const themeObj = makeThemeObject(theme)
-  await fs.writeFile(theme.file, [JSON.stringify(themeObj, null, 2), "\n"])
+  await fs.writeFile(theme.file, [JSON.stringify(themeObj, null, JSON_SPACING), "\n"])
 }
