@@ -41,7 +41,7 @@ const SEMANTICS = {
   light: {
     unmarked: CMYK.black,
     keywords: MONOKAIPRO.light.red,
-    types: CMYK.caeruleum,
+    types: CMYK.cerulean,
     constants: DEFAULTLIGHT.magenta,
     strings: MONOKAIPRO.light.yellow,
     functions: MONOKAIPRO.light.green,
