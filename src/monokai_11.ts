@@ -119,7 +119,11 @@ function makeDark(semantics: SemanticsT) {
 
 function makeLight(semantics: SemanticsT) {
   return {
-    colors: {},
+    colors: {
+      "editor.lineHighlightBackground": "#4444440c",
+      "editorLineNumber.foreground": CMYK.gray,
+      "editorLineNumber.activeForeground": CMYK.denimblue,
+    },
     tokenColors: makeTokenColors(semantics),
   }
 }
@@ -173,13 +177,13 @@ function makeTokenColors(semantics: SemanticsT) {
         foreground: semantics.functions,
       },
     },
-    {
-      name: "Function arguments",
-      scope: scopes.ARGUMENTS,
-      settings: {
-        foreground: semantics.arguments,
-      },
-    },
+    // {
+    //   name: "Function arguments",
+    //   scope: scopes.ARGUMENTS,
+    //   settings: {
+    //     foreground: semantics.arguments,
+    //   },
+    // },
     {
       name: "Number, Constant, Embedded",
       scope: scopes.CONSTANTS,

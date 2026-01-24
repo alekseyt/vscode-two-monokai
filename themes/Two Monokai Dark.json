@@ -108,15 +108,6 @@
       }
     },
     {
-      "name": "Function arguments",
-      "scope": [
-        "variable.parameter"
-      ],
-      "settings": {
-        "foreground": "#fc9867"
-      }
-    },
-    {
       "name": "Number, Constant, Embedded",
       "scope": [
         "constant.numeric",

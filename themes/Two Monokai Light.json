@@ -2,7 +2,11 @@
   "name": "Eleven Monokai",
   "type": "light",
   "semanticHighlighting": true,
-  "colors": {},
+  "colors": {
+    "editor.lineHighlightBackground": "#4444440c",
+    "editorLineNumber.foreground": "#9e9e9e",
+    "editorLineNumber.activeForeground": "#0a70ff"
+  },
   "tokenColors": [
     {
       "name": "Invalid",
@@ -88,15 +92,6 @@
       ],
       "settings": {
         "foreground": "#269d69"
-      }
-    },
-    {
-      "name": "Function arguments",
-      "scope": [
-        "variable.parameter"
-      ],
-      "settings": {
-        "foreground": "#fc9867"
       }
     },
     {
