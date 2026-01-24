@@ -103,7 +103,6 @@ function makeDark(semantics: SemanticsT) {
       "titleBar.activeBackground": "#333333",
       // derived from Monokai
       // this is actually from Monokai, not from Default Dark or Monokai Dimmed
-      // not sure about "fa" part, looks inconsistent, but this is what was picked from screenshot
       "editor.foreground": MONOKAIPRO.dark.white,
       // derived from Default Dark
       "editor.background": "#1e1e1e",
@@ -123,18 +122,21 @@ function makeLight(semantics: SemanticsT) {
       "editor.lineHighlightBackground": "#4444440a",
       "editorLineNumber.foreground": CMYK.gray,
       "editorLineNumber.activeForeground": CMYK.denimblue,
-      "activityBar.background": "#d8d8d8", // Tad darker than default section header (#dcdcdc)
+      "activityBar.background": "#d8d8d8", // tad darker than default section header (#dcdcdc)
       "activityBar.border": "#d8d8d8",
       "activityBar.activeBorder": "#d8d8d8",
       "activityBar.foreground": DEFAULTLIGHT.darkgray,
       "activityBar.inactiveForeground": DEFAULTLIGHT.gray,
-      "titleBar.activeBackground": "#d8d8d8", // Match sidebar (activity bar)
       "statusBar.background": "#d8d8d8", // match sidebar (activity bar)
       "statusBar.debuggingBackground": "#d8d8d8",
       "statusBar.noFolderBackground": "#d8d8d8",
       "statusBar.foreground": DEFAULTLIGHT.darkgray, // match sidebar icons color
       "statusBarItem.remoteBackground": "#d8d8d8", // for WSL segment
       "statusBarItem.remoteForeground": DEFAULTLIGHT.darkgray,
+      "titleBar.activeBackground": "#d8d8d8", // match sidebar (activity bar)
+      "editor.foreground": MONOKAIPRO.light.black,
+      "editor.background": "#ffffff", // derived from default light
+      "editorBracketMatch.border": "#616161",
     },
     tokenColors: makeTokenColors(semantics),
   }

@@ -11,13 +11,16 @@
     "activityBar.activeBorder": "#d8d8d8",
     "activityBar.foreground": "#1f1f1f",
     "activityBar.inactiveForeground": "#616161",
-    "titleBar.activeBackground": "#d8d8d8",
     "statusBar.background": "#d8d8d8",
     "statusBar.debuggingBackground": "#d8d8d8",
     "statusBar.noFolderBackground": "#d8d8d8",
     "statusBar.foreground": "#1f1f1f",
     "statusBarItem.remoteBackground": "#d8d8d8",
-    "statusBarItem.remoteForeground": "#1f1f1f"
+    "statusBarItem.remoteForeground": "#1f1f1f",
+    "titleBar.activeBackground": "#d8d8d8",
+    "editor.foreground": "#1c1514",
+    "editor.background": "#ffffff",
+    "editorBracketMatch.border": "#616161"
   },
   "tokenColors": [
     {

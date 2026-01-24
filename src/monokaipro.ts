@@ -1,6 +1,6 @@
 export const MONOKAIPRO = {
   dark: {
-    white: "#fcfcfa",
+    white: "#fcfcfa", // not sure about "fa" part, looks inconsistent, but this is what was picked from screenshot
     red: "#ff6188",
     orange: "#fc9867",
     yellow: "#ffd866",
