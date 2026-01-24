@@ -7,12 +7,24 @@ Clean, clear, dark, color-coded theme without bullshit:
 - Good contrast
 - ~~Bugs fixed, PRs merged, etc~~
 
-Light theme was also added to complement dark theme on bright days.
-
 Theme focuses mostly (but not entirely) on editor colors, the rest are defaults
 (default dark or something). Inspired by [One Monokai][] theme, but instead
 of blending One Dark and Monokai, it blends Default Dark, Monokai Dimmed
 and Monokai (and a little bit of One Dark, it's complicated).
+
+---
+
+Light theme was also added to complement dark theme on bright days.
+It is a sensible theme with the same color-coding as dark theme, although
+it is rather a temporary replacement for dark theme, which seems superior.
+
+Actually it appears to be much harder to make a good-looking light theme
+than a good-looking dark theme. So dark theme looks superior by default.
+
+With that said, in my opinion, light theme is more practical than default
+light themes supplied with vscode.
+
+---
 
 [One Monokai]: https://github.com/azemoh/vscode-one-monokai
 
