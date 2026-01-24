@@ -10,9 +10,19 @@ export interface ThemeSettingsI {
   type: "dark" | "light"
 }
 
+interface TokenColorI {
+  name: string
+  scope: string[]
+  settings: object
+}
+
 export function makeThemeObject(settings: ThemeSettingsI) {
+  const semantics = settings.type === "dark" ? SEMANTICS.dark : SEMANTICS.light
+  validateSemantics(semantics)
+
+  const tokenColors = makeTokenColors(semantics)
+  const themeObj = settings.type === "dark" ? makeDark(tokenColors) : makeLight(tokenColors)
   const commonObj = makeCommon(settings)
-  const themeObj = settings.type === "dark" ? makeDark(SEMANTICS.dark) : makeLight(SEMANTICS.light)
   const finalObj = { ...commonObj, ...themeObj }
 
   return finalObj
@@ -87,7 +97,7 @@ function makeCommon(settings: ThemeSettingsI) {
 // https://code.visualstudio.com/api/extension-guides/color-theme
 // https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide
 
-function makeDark(semantics: SemanticsT) {
+function makeDark(tokenColors: TokenColorI[]) {
   return {
     colors: {
       "editor.lineHighlightBackground": "#4444447f",
@@ -107,11 +117,11 @@ function makeDark(semantics: SemanticsT) {
       "editorBracketMatch.border": "#cccccc", // brackets match color is actually coming from default text color in file explorer and it is pure gray
       "terminal.ansiWhite": "#ffffff", // don't remember why
     },
-    tokenColors: makeTokenColors(semantics),
+    tokenColors: tokenColors,
   }
 }
 
-function makeLight(semantics: SemanticsT) {
+function makeLight(tokenColors: TokenColorI[]) {
   return {
     colors: {
       "editor.lineHighlightBackground": "#4444440a",
@@ -131,15 +141,13 @@ function makeLight(semantics: SemanticsT) {
       "titleBar.activeBackground": "#d8d8d8", // match sidebar (activity bar)
       "editor.foreground": MONOKAIPRO.light.black,
       "editor.background": "#ffffff", // derived from default light
-      "editorBracketMatch.border": "#616161",
+      "editorBracketMatch.border": "#616161", // this matches default text color in file explorer
     },
-    tokenColors: makeTokenColors(semantics),
+    tokenColors: tokenColors,
   }
 }
 
 function makeTokenColors(semantics: SemanticsT) {
-  validateSemantics(semantics)
-
   return [
     {
       // also place for disabling unwanted highlighting
