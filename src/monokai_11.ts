@@ -11,13 +11,13 @@ export interface ThemeSettingsI {
 
 export function makeThemeObject(settings: ThemeSettingsI) {
   const commonObj = makeCommon(settings)
-  const themeObj = settings.type === "dark" ? makeDark(semantics.dark) : makeLight(semantics.light)
+  const themeObj = settings.type === "dark" ? makeDark(SEMANTICS.dark) : makeLight(SEMANTICS.light)
   const finalObj = { ...commonObj, ...themeObj }
 
   return finalObj
 }
 
-const semantics = {
+const SEMANTICS = {
   dark: {
     unmarked: MONOKAIPRO.dark.white,
     keywords: MONOKAIPRO.dark.red,
@@ -57,7 +57,7 @@ const semantics = {
   },
 }
 
-type SemanticsT = typeof semantics.dark
+type SemanticsT = typeof SEMANTICS.dark
 
 function validateSemantics(semantics: SemanticsT) {
   if (semantics.markup.heading !== semantics.strings) {
