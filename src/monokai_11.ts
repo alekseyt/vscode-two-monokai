@@ -37,6 +37,7 @@ const SEMANTICS = {
     arguments: MONOKAIPRO.dark.orange,
     members: ONEDARK.blue,
     comments: MONOKAIDIMMED.comments,
+    link: ONEDARK.blue,
 
     markup: {
       list: MONOKAIPRO.dark.green,
@@ -56,6 +57,7 @@ const SEMANTICS = {
     arguments: MONOKAIPRO.dark.orange,
     members: CMYK.denimblue,
     comments: CMYK.gray,
+    link: CMYK.denimblue,
 
     markup: {
       list: MONOKAIPRO.light.green,
@@ -75,7 +77,7 @@ function validateSemantics(semantics: SemanticsT): SemanticsT {
   if (semantics.markup.inline !== semantics.constants) {
     throw new Error("semantics.markup.inline !== semantics.constants")
   }
-  if (semantics.markup.link !== semantics.members) {
+  if (semantics.markup.link !== semantics.link) {
     throw new Error("semantics.markup.link !== semantics.members")
   }
 
@@ -268,6 +270,7 @@ function makeTokenColors(semantics: SemanticsT) {
       name: "URL",
       scope: scopes.URL,
       settings: {
+        foreground: semantics.link,
         fontStyle: "underline",
       },
     },

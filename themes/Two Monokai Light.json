@@ -215,6 +215,7 @@
         "*uri*"
       ],
       "settings": {
+        "foreground": "#0a70ff",
         "fontStyle": "underline"
       }
     },

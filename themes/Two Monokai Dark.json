@@ -213,6 +213,7 @@
         "*uri*"
       ],
       "settings": {
+        "foreground": "#61afef",
         "fontStyle": "underline"
       }
     },
