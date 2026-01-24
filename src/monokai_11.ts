@@ -61,7 +61,7 @@ type SemanticsT = typeof semantics.dark
 
 function validateSemantics(semantics: SemanticsT) {
   if (semantics.markup.heading !== semantics.strings) {
-    throw new Error("semantics.markup.headingText !== semantics.strings")
+    throw new Error("semantics.markup.heading !== semantics.strings")
   }
   if (semantics.markup.inline !== semantics.constants) {
     throw new Error("semantics.markup.inline !== semantics.constants")
