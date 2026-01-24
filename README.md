@@ -9,7 +9,7 @@ Clean, clear, dark, color-coded theme without bullshit:
 
 Light theme was also added to complement dark theme on bright days.
 
-Focuses mostly (but not entirely) on editor colors, the rest are defaults
+Theme focuses mostly (but not entirely) on editor colors, the rest are defaults
 (default dark or something). Inspired by [One Monokai][] theme, but instead
 of blending One Dark and Monokai, it blends Default Dark, Monokai Dimmed
 and Monokai (and a little bit of One Dark, it's complicated).
