@@ -97,9 +97,9 @@ export const ES7BINDOP = ["source.js constant.other.object.key.js string.unquote
 
 export const URL = ["*url*", "*link*", "*uri*"]
 
-export const MARKUP_LIST = ["markup.quote", "markup.list", "markup.other"]
+export const MARKUP_LIST = ["punctuation.definition.list", "punctuation.definition.quote"]
 
-export const MARKUP_STYLING = ["markup.bold", "markup.italic"]
+export const MARKUP_STYLING = ["markup.bold", "markup.italic", "markup.strikethrough"]
 
 export const MARKUP_HEADINGS = [
   "markup.heading",
