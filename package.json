@@ -34,6 +34,12 @@
       }
     ]
   },
+  "files": [
+    "themes/**/*.json",
+    "package*.json",
+    "LICENSE",
+    "README.md"
+  ],
   "devDependencies": {
     "@types/node": "^25.0.10",
     "@vscode/vsce": "^3.7.1",
