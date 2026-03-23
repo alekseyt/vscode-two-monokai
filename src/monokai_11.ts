@@ -1,6 +1,6 @@
 import { CMYK } from "./cmyk.ts"
 import { DEFAULTLIGHT } from "./defaultlight.ts"
-import { LHD } from "./legithackdesign.ts"
+import { LHD } from "./legithacksdesign.ts"
 import { MONOKAIDIMMED } from "./monokaidimmed.ts"
 import { MONOKAIPRO } from "./monokaipro.ts"
 import { ONEDARK } from "./onedark.ts"
