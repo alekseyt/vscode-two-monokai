@@ -36,7 +36,8 @@
   },
   "files": [
     "themes/**/*.json",
-    "package*.json",
+    "package.json",
+    "package.nls.*.json",
     "LICENSE",
     "README.md"
   ],
