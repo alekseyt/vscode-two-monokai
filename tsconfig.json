@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
 
     "noEmit": true,
     "allowImportingTsExtensions": true, // Needed to run TS in node
@@ -22,7 +21,9 @@
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true, // accessing index must always check for undefined
     "isolatedModules": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+
+    "types": ["node"]
   },
   "include": ["./**/*.ts", "./**/*.mjs"],
   "exclude": ["./node_modules/**/*"]
