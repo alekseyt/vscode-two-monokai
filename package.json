@@ -10,7 +10,7 @@
     "make_vsce": "vsce package",
     "build": "run-s compile make_theme make_vsce",
     "lint": "eslint 'src/**/*.ts'",
-    "format": "prettier --write './**/*.{json,ts,mjs}'"
+    "format": "prettier --write './**/*.{json,ts,mjs}' '!./themes/*.json'"
   },
   "repository": {
     "url": "https://github.com/alekseyt/vscode-two-monokai"
