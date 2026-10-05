@@ -41,6 +41,7 @@ export const MEMBERS = [
   "string.other.link", // detected links will be this color too
   "variable.other.lua", // obj.x in Lua ("x" part)
   "support.variable.glsl", // well-known variables: gl_FragColor, gl_FragData
+  "variable.other.constant.property", // Typescript "private readonly" member in class
 ]
 
 export const COMMENTS = ["comment", "punctuation.definition.comment"]
