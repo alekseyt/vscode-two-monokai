@@ -79,7 +79,8 @@
         "string.other.link",
         "variable.other.lua",
         "support.variable.glsl",
-        "variable.other.constant.property"
+        "variable.other.constant.property",
+        "meta.object.member"
       ],
       "settings": {
         "foreground": "#61afef"
