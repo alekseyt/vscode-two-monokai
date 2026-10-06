@@ -19,19 +19,29 @@ interface TokenColorI {
 
 // https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide
 interface SemanticTokenColorsI {
-  variable: string
-  property: string
-  parameter: string
-  type: string
-  class: string
-  interface: string
-  function: string
-  method: string
-  keyword: string
-  namespace: string
-  comment: string
-  number: string
-  string: string
+  namespace?: string
+  class?: string
+  enum?: string
+  interface?: string
+  struct?: string
+  typeParameter?: string
+  type?: string
+  parameter?: string
+  variable?: string
+  property?: string
+  enumMember?: string
+  decorator?: string
+  event?: string
+  function?: string
+  method?: string
+  macro?: string
+  label?: string
+  comment?: string
+  string?: string
+  keyword?: string
+  number?: string
+  regexp?: string
+  operator?: string
 }
 
 export function makeThemeObject(settings: ThemeSettingsI) {
@@ -175,16 +185,15 @@ function makeLight(semanticTokenColors: SemanticTokenColorsI, tokenColors: Token
 
 function makeSemanticTokenColors(semantics: SemanticsT): SemanticTokenColorsI {
   // Colors that aren't set here will be defaulted,
-  // which isn't a bad idea overall: vscode semantic highlighting isn't dumb and redundant settings might make things worse.
+  // which isn't a bad idea overall: vscode semantic highlighting isn't dumb
+  // and redundant settings might make things worse.
+  // There are also textmate scopes to fallback to.
   return {
     variable: semantics.unmarked,
     property: semantics.members,
     parameter: semantics.unmarked,
     type: semantics.types,
-    class: semantics.types,
-    interface: semantics.types,
     function: semantics.functions,
-    method: semantics.functions,
     keyword: semantics.keywords,
     namespace: semantics.functions, // this is not intuitive, but namespace is usually followed by a function, so make them same color
     comment: semantics.comments,
