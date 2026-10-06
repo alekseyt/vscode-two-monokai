@@ -118,7 +118,8 @@
         "support.function",
         "keyword.other.special-method",
         "entity.name.scope-resolution",
-        "entity.name.namespace"
+        "entity.name.namespace",
+        "meta.function-call"
       ],
       "settings": {
         "foreground": "#269d69"

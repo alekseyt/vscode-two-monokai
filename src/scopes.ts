@@ -59,6 +59,7 @@ export const FUNCTIONS = [
   // but as a side effect, std in std::string is colored too
   "entity.name.scope-resolution",
   "entity.name.namespace", // name in namespace declaration as in "namespace ns {}" ("ns" part)
+  "meta.function-call", // Python's function call
 ]
 
 export const ARGUMENTS = ["variable.parameter"]
