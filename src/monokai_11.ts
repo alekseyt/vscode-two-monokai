@@ -17,10 +17,30 @@ interface TokenColorI {
   settings: object
 }
 
+// https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide
+interface SemanticTokenColorsI {
+  variable: string
+  property: string
+  parameter: string
+  type: string
+  class: string
+  interface: string
+  function: string
+  method: string
+  macro: string
+  keyword: string
+  namespace: string
+  comment: string
+  number: string
+  string: string
+}
+
 export function makeThemeObject(settings: ThemeSettingsI) {
   const semantics = validateSemantics(settings.type === "dark" ? SEMANTICS.dark : SEMANTICS.light)
+  const semanticTokenColors = makeSemanticTokenColors(semantics)
   const tokenColors = makeTokenColors(semantics)
-  const themeObj = settings.type === "dark" ? makeDark(tokenColors) : makeLight(tokenColors)
+  const themeObj =
+    settings.type === "dark" ? makeDark(semanticTokenColors, tokenColors) : makeLight(semanticTokenColors, tokenColors)
   const commonObj = makeCommon(settings)
   const finalObj = { ...commonObj, ...themeObj }
 
@@ -100,7 +120,7 @@ function makeCommon(settings: ThemeSettingsI) {
 // https://code.visualstudio.com/api/extension-guides/color-theme
 // https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide
 
-function makeDark(tokenColors: TokenColorI[]) {
+function makeDark(semanticTokenColors: SemanticTokenColorsI, tokenColors: TokenColorI[]) {
   return {
     colors: {
       "statusBar.background": "#333333", // match sidebar (activity bar)
@@ -121,11 +141,12 @@ function makeDark(tokenColors: TokenColorI[]) {
       "editorBracketMatch.border": "#cccccc", // brackets match color is actually coming from default text color in file explorer and it is pure gray
       "terminal.ansiWhite": "#ffffff", // don't remember why
     },
+    semanticTokenColors: semanticTokenColors,
     tokenColors: tokenColors,
   }
 }
 
-function makeLight(tokenColors: TokenColorI[]) {
+function makeLight(semanticTokenColors: SemanticTokenColorsI, tokenColors: TokenColorI[]) {
   return {
     colors: {
       "activityBar.background": "#d8d8d8", // tad darker than default section header (#dcdcdc)
@@ -148,11 +169,31 @@ function makeLight(tokenColors: TokenColorI[]) {
       "editorLineNumber.activeForeground": CMYK.denimblue,
       "editorBracketMatch.border": "#616161", // this matches default text color in file explorer
     },
+    semanticTokenColors: semanticTokenColors,
     tokenColors: tokenColors,
   }
 }
 
-function makeTokenColors(semantics: SemanticsT) {
+function makeSemanticTokenColors(semantics: SemanticsT): SemanticTokenColorsI {
+  return {
+    variable: semantics.unmarked,
+    property: semantics.members,
+    parameter: semantics.unmarked,
+    type: semantics.types,
+    class: semantics.types,
+    interface: semantics.types,
+    function: semantics.functions,
+    method: semantics.functions,
+    macro: semantics.constants,
+    keyword: semantics.keywords,
+    namespace: semantics.functions, // this is not intuitive, but namespace is usually followed by a function, so make them same color
+    comment: semantics.comments,
+    number: semantics.constants,
+    string: semantics.strings,
+  }
+}
+
+function makeTokenColors(semantics: SemanticsT): TokenColorI[] {
   return [
     {
       // also place for disabling unwanted highlighting

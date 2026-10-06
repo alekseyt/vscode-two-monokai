@@ -23,6 +23,22 @@
     "editorLineNumber.activeForeground": "#0a70ff",
     "editorBracketMatch.border": "#616161"
   },
+  "semanticTokenColors": {
+    "variable": "#000000",
+    "property": "#023bd9",
+    "parameter": "#000000",
+    "type": "#0e9ee8",
+    "class": "#0e9ee8",
+    "interface": "#0e9ee8",
+    "function": "#269d69",
+    "method": "#269d69",
+    "macro": "#af00db",
+    "keyword": "#e14775",
+    "namespace": "#269d69",
+    "comment": "#9e9e9e",
+    "number": "#af00db",
+    "string": "#cc7a0a"
+  },
   "tokenColors": [
     {
       "name": "Invalid",

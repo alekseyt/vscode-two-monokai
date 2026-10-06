@@ -21,6 +21,22 @@
     "editorBracketMatch.border": "#cccccc",
     "terminal.ansiWhite": "#ffffff"
   },
+  "semanticTokenColors": {
+    "variable": "#fcfcfa",
+    "property": "#61afef",
+    "parameter": "#fcfcfa",
+    "type": "#78dce8",
+    "class": "#78dce8",
+    "interface": "#78dce8",
+    "function": "#a9dc76",
+    "method": "#a9dc76",
+    "macro": "#ab9df2",
+    "keyword": "#ff6188",
+    "namespace": "#a9dc76",
+    "comment": "#9a9b99",
+    "number": "#ab9df2",
+    "string": "#ffd866"
+  },
   "tokenColors": [
     {
       "name": "Invalid",
