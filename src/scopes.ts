@@ -74,6 +74,7 @@ export const CONSTANTS = [
   "keyword.other.unit", // "f" in "12.5f"
   "support.contant.glsl", // well-known constants
   "string constant.other.placeholder", // "%s" in printf etc
+  "storage.type.number.python", // Python's "0x" in "0x1234"
 ]
 
 export const STRINGS = [

@@ -132,7 +132,8 @@
         "constant.escape",
         "keyword.other.unit",
         "support.contant.glsl",
-        "string constant.other.placeholder"
+        "string constant.other.placeholder",
+        "storage.type.number.python"
       ],
       "settings": {
         "foreground": "#ab9df2"
