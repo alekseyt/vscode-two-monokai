@@ -44,11 +44,11 @@
   ],
   "devDependencies": {
     "@types/node": "latest",
-    "@vscode/vsce": "^3.7.1",
-    "eslint": "^10.1.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^3.8.1",
-    "typescript": "^6.0.0",
-    "typescript-eslint": "^8.57.1"
+    "@vscode/vsce": "latest",
+    "eslint": "^10",
+    "npm-run-all": "^4",
+    "prettier": "^3",
+    "typescript": "^6",
+    "typescript-eslint": "^8"
   }
 }
