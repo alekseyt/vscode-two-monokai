@@ -12,16 +12,16 @@ Theme focuses mostly (but not entirely) on editor colors, the rest are defaults
 of blending One Dark and Monokai, it blends Default Dark, Monokai Dimmed
 and Monokai (and a little bit of One Dark, it's complicated).
 
-There is [semantic highlighting][] support, but it requires language server
+There is [semantic highlighting][] support, but it requires a language server
 installed for each language you want to highlight. Namely, if you want to
-enable it for Python, install Python extension from vscode marketplace.
+enable it for Python, install the Python extension from the vscode marketplace.
 
-Semantic hightlighting is superior, it has more context about the code and
+Semantic highlighting is superior, it has more context about the code and
 can color code better. For instance, it may know if imported symbol is a
 function or a constant.
 
-Textmate highlighting isn't bad on its own, it's just has less context and
-can't properly highlight everything. By extension, semantic and syntax
+Textmate highlighting isn't bad on its own, it just has less context and
+can't properly highlight everything. By extension, semantic and textmate syntax
 highlighting might be different from each other.
 
 [semantic highlighting]: https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide
@@ -99,7 +99,7 @@ Derived from Monokai Pro (light):
 - Cyan: <span style="color:#1c8ca8">#1c8ca8</span>
 - Magenta: <span style="color:#7058be">#7058be</span>
 
-There are also some CMYK colors were used (light themes are hard).
+There are also some CMYK colors that were used (light themes are hard).
 
 - CMYK [color codes](https://www.toutes-les-couleurs.com/en/CMYK-color-code.php)
 - CMYK to RGB [converter](https://www.rapidtables.com/convert/color/cmyk-to-rgb.html)
