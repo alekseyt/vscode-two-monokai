@@ -16,6 +16,14 @@ There is [semantic highlighting][] support, but it requires language server
 installed for each language you want to highlight. Namely, if you want to
 enable it for Python, install Python extension from vscode marketplace.
 
+Semantic hightlighting is superior, it has more context about the code and
+can color code better. For instance, it may know if imported symbol is a
+function or a constant.
+
+Textmate highlighting isn't bad on its own, it's just has less context and
+can't properly highlight everything. By extension, semantic and syntax
+highlighting might be different from each other.
+
 [semantic highlighting]: https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide
 
 ---
