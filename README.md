@@ -12,6 +12,12 @@ Theme focuses mostly (but not entirely) on editor colors, the rest are defaults
 of blending One Dark and Monokai, it blends Default Dark, Monokai Dimmed
 and Monokai (and a little bit of One Dark, it's complicated).
 
+There is [semantic highlighting][] support, but it requires language server
+installed for each language you want to highlight. Namely, if you want to
+enable it for Python, install Python extension from vscode marketplace.
+
+[semantic highlighting]: https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide
+
 ---
 
 Light theme was also added to complement dark theme on bright days.
@@ -28,11 +34,21 @@ light themes supplied with vscode.
 
 [One Monokai]: https://github.com/azemoh/vscode-one-monokai
 
-<img width="1920" height="1030" alt="11-monokai-dark" src="https://github.com/user-attachments/assets/bb8e8324-a06d-4cd2-aff5-1420e6c8c260" />
+<img
+  width="1920"
+  height="1030"
+  alt="11-monokai-dark"
+  src="https://github.com/user-attachments/assets/bb8e8324-a06d-4cd2-aff5-1420e6c8c260"
+/>
 
 ---
 
-<img width="1920" height="1030" alt="11-monokai-light" src="https://github.com/user-attachments/assets/bf2fb04a-1566-475d-82fe-1ec359cf05bb" />
+<img
+  width="1920"
+  height="1030"
+  alt="11-monokai-light"
+  src="https://github.com/user-attachments/assets/bf2fb04a-1566-475d-82fe-1ec359cf05bb"
+/>
 
 ---
 
