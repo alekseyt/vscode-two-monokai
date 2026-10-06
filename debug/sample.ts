@@ -1,5 +1,8 @@
 // Visual color coding test for Typescript
 
+const PRIME = 0x01000193
+void PRIME
+
 export class Test {
   private readonly _name: string = "test"
 
