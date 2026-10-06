@@ -27,7 +27,6 @@ interface SemanticTokenColorsI {
   interface: string
   function: string
   method: string
-  macro: string
   keyword: string
   namespace: string
   comment: string
@@ -175,6 +174,8 @@ function makeLight(semanticTokenColors: SemanticTokenColorsI, tokenColors: Token
 }
 
 function makeSemanticTokenColors(semantics: SemanticsT): SemanticTokenColorsI {
+  // Colors that aren't set here will be defaulted,
+  // which isn't a bad idea overall: vscode semantic highlighting isn't dumb and redundant settings might make things worse.
   return {
     variable: semantics.unmarked,
     property: semantics.members,
@@ -184,7 +185,6 @@ function makeSemanticTokenColors(semantics: SemanticsT): SemanticTokenColorsI {
     interface: semantics.types,
     function: semantics.functions,
     method: semantics.functions,
-    macro: semantics.constants,
     keyword: semantics.keywords,
     namespace: semantics.functions, // this is not intuitive, but namespace is usually followed by a function, so make them same color
     comment: semantics.comments,
