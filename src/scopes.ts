@@ -42,6 +42,7 @@ export const MEMBERS = [
   "variable.other.lua", // obj.x in Lua ("x" part)
   "support.variable.glsl", // well-known variables: gl_FragColor, gl_FragData
   "variable.other.constant.property", // Typescript "private readonly" member in class
+  "meta.object.member", // Typescript's "variable.object.member" changes scope to "meta.object.member" in diff view (no semantic scopes)
 ]
 
 export const COMMENTS = ["comment", "punctuation.definition.comment"]
